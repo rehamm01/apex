@@ -13,6 +13,10 @@ $end-small: 600px;
 $end-medium: 800px;
 $max-width: 1200px;
 
+$light-gradient: #310d43;
+$dark-gradient: #21052e;
+$light-button: #c0acd1;
+$dark-button: #9270aa;
 
 /* =================================================================
 mixins
@@ -26,6 +30,14 @@ mixins
     }
 }
 
+@mixin gradient {
+	background: rgb(49, 13, 67);
+	background: -moz-linear-gradient(92deg, rgb(49, 13, 67) 0%, rgb(33, 5, 46) 100%);
+	background: -webkit-linear-gradient(92deg, rgb(49, 13, 67) 0%, rgb(33, 5, 46) 100%);
+	background: -o-linear-gradient(92deg, rgb(49, 13, 67) 0%, rgb(33, 5, 46) 100%);
+	background: -ms-linear-gradient(92deg, rgb(49, 13, 67) 0%, rgb(33, 5, 46) 100%);
+	background: linear-gradient(182deg, rgb(49, 13, 67) 0%, rgb(33, 5, 46) 100%);
+}
 
 /* =================================================================
 reset
@@ -86,6 +98,310 @@ table {
 /* =================================================================
 basic
 ================================================================= */
+ 
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 62.5%;
+}
+
+h1 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 0;
+
+		@include breakpoint($end-small) {
+			display: table-cell;
+    		vertical-align: middle;
+		}
+}
+
+p {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+a {
+	color: #fff;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* =================================================================
+header
+================================================================= */
+
+.header-image { 
+	position: relative;
+    background-image: url("../img/baxter-background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5em 0 3em;
+    -webkit-box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.75);
+
+			@include breakpoint($end-small) {
+				padding-top: 0;
+				height: 90vh;
+				display: table;
+				width: 100%;
+			}
+
+	img {
+	    width: 430px;
+	    margin: 0 auto;
+	    display: block;
+
+	    	@include breakpoint($end-small) {
+	    		min-width: 592px;
+			    width: 50%;
+			    max-width: 750px;
+	    	}
+	}
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: url('../img/menu.png') no-repeat;
+    width: 26px;
+    height: 26px;
+    text-indent: -99999px;
+    z-index: 100;
+
+    	@include breakpoint($end-small) {
+    		display: none;
+    	}
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: #230730;
+    background-color: rgba(35,7,48, 0.95);
+    overflow-y: hidden;
+    transition: 0.5s;
+
+    	a {
+		    padding: 3% 0;
+		    text-decoration: none;
+		    font-size: 2em;
+		    color: #fff;
+		    display: block;
+		    transition: 0.3s;
+		    text-transform: uppercase;
+		}
+}
+
+.overlay-content {
+    position: relative;
+    top: 7%;
+    width: 100%;
+    text-align: center;
+}
+
+.closebtn {
+	position: absolute;
+	right: 15px;
+	font-size: 6em !important; 
+	padding: 0 !important;
+	margin: -10px 0px !important;
+}
+
+.mobileNav {
+	@include breakpoint($end-small) {
+		display: none;
+	}
+}
+
+#desktopNav {
+	display: none; 
+
+	@include breakpoint($end-small) {
+		display: block;
+	    padding: 1.75em 1em;
+	    background: rgba(64,17,87,1);
+		background: -moz-linear-gradient(top, rgba(64,17,87,1) 0%, rgba(33,6,46,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(64,17,87,1)), color-stop(100%, rgba(33,6,46,1)));
+		background: -webkit-linear-gradient(top, rgba(64,17,87,1) 0%, rgba(33,6,46,1) 100%);
+		background: -o-linear-gradient(top, rgba(64,17,87,1) 0%, rgba(33,6,46,1) 100%);
+		background: -ms-linear-gradient(top, rgba(64,17,87,1) 0%, rgba(33,6,46,1) 100%);
+		background: linear-gradient(to bottom, rgba(64,17,87,1) 0%, rgba(33,6,46,1) 100%);
+
+	    	a {
+			    text-transform: uppercase;
+			    font-size: 1.3em;
+			    text-decoration: none;
+			    display: inline-block;
+			    padding: 0 1em;
+			    line-height: 34px;
+			}
+	}
+}
+
+
+/* =================================================================
+About
+================================================================= */
+
+#intro {
+    padding: 4em 3em;
+
+    p {
+	    font-size: 1.7em;
+	    line-height: 22px;
+
+	    	@include breakpoint($end-small) {
+	    		font-size: 3.2em;
+	    		line-height: 1.3em;
+	    	}
+	}
+
+	.fine-print p {
+		font-size: 1.4em;
+	    line-height: 17px;
+	    padding-bottom: .25em;
+
+	    	@include breakpoint($end-small) {
+	    		font-size: 1.6em;
+	    		line-height: 1.25em;
+	    	}
+	}
+}
+
+.buttons {
+	margin: 4em auto;
+    display: block;
+    max-width: 320px;
+
+	.app,
+	.google {
+		text-indent: -99999px;
+	    display: inline-block;
+	    max-width: 156px;
+	    height: 46px;
+	}
+
+	.app {
+		background: url('../img/Download_on_the_App_Store_Badge_US-UK_135x40.svg') no-repeat;
+	    width: 48%;
+	    background-size: contain;
+	    margin-right: 2%;
+	}
+
+	.google {
+		background: url('../img/google-play-badge.png') no-repeat;
+	    width: 48%;
+	    background-size: contain;
+	}
+}
+
+.social-nav {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    max-width: 250px;
+    margin: 0 auto;
+
+    		@include breakpoint($end-small) {
+    			max-width: 350px;
+    		}
+
+	li {
+		display: inline-block;
+		-webkit-box-flex: 0;
+	    -moz-box-flex: 0;
+	    -webkit-flex: 0 1 auto;
+	    -ms-flex: 0 1 auto;
+	    flex: 0 1 auto;
+	    -webkit-align-self: auto;
+	    -ms-flex-item-align: auto;
+	    align-self: auto;
+	}
+
+	a {
+		    text-indent: -99999px;
+		    display: inline-block;
+		    background: url('../img/baxter-social.png') no-repeat;
+		    height: 73px;
+		    width: 73px;
+
+		    &.facebook {
+			    background-position: 0;
+			}
+
+			&.twitter {
+			    background-position: -73px 0;
+			}
+
+			&.instagram {
+			    background-position: -146px 0;
+			}
+
+			&.email {
+			    background-position: -219px 0;
+			    margin-left: 45px;
+
+			    	@include breakpoint($end-small) {
+			    		margin: 0;
+			    	}
+			}
+
+			&.phone {
+			    background-position: -292px 0;
+			    margin-right: 45px;
+
+			    	@include breakpoint($end-small) {
+			    		margin: 0;
+			    	}
+			}
+
+			&.phone.mobile {
+					@include breakpoint($end-small) {
+						display: none;
+					}
+			}
+	}
+}
+
 
 
 
