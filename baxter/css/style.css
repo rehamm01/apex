@@ -76,17 +76,39 @@ h1 {
       display: table-cell;
       vertical-align: middle; } }
 
+h3 {
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  line-height: 1.3em; }
+
 p {
   text-align: center;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  line-height: 1.5em; }
 
 a {
-  color: #fff; }
+  color: #fff;
+  text-decoration: none; }
 
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
   width: 100%; }
+
+section {
+  padding: 8em 2em; }
+
+.title {
+  text-transform: uppercase;
+  margin: 0 .5em;
+  display: inline-block; }
+
+.date {
+  margin: 0 .5em;
+  display: inline-block; }
 
 /* =================================================================
 header
@@ -107,7 +129,7 @@ header
       display: table;
       width: 100%; } }
   .header-image img {
-    width: 430px;
+    width: 336px;
     margin: 0 auto;
     display: block; }
     @media screen and (min-width: 600px) {
@@ -213,21 +235,6 @@ About
   margin: 4em auto;
   display: block;
   max-width: 320px; }
-  .buttons .app,
-  .buttons .google {
-    text-indent: -99999px;
-    display: inline-block;
-    max-width: 156px;
-    height: 46px; }
-  .buttons .app {
-    background: url("../img/Download_on_the_App_Store_Badge_US-UK_135x40.svg") no-repeat;
-    width: 48%;
-    background-size: contain;
-    margin-right: 2%; }
-  .buttons .google {
-    background: url("../img/google-play-badge.png") no-repeat;
-    width: 48%;
-    background-size: contain; }
 
 .social-nav {
   display: -webkit-box;
@@ -300,5 +307,143 @@ About
     @media screen and (min-width: 600px) {
       .social-nav a.phone.mobile {
         display: none; } }
+
+.button {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: .75em .75em .6em;
+  border: 1px solid #fff;
+  width: 189px;
+  margin: 0 auto;
+  display: block; }
+
+.gradient {
+  background: #401157;
+  background: -moz-linear-gradient(top, #401157 0%, #21062e 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #401157), color-stop(100%, #21062e));
+  background: -webkit-linear-gradient(top, #401157 0%, #21062e 100%);
+  background: -o-linear-gradient(top, #401157 0%, #21062e 100%);
+  background: -ms-linear-gradient(top, #401157 0%, #21062e 100%);
+  background: linear-gradient(to bottom, #401157 0%, #21062e 100%); }
+
+#tickets {
+  padding: 2em; }
+
+/* =================================================================
+Images
+================================================================= */
+.image1 {
+  background: url("../img/baxter-exterior.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 53.5%; }
+
+.image2 {
+  background: url("../img/bolshoi.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 66%; }
+
+.image3 {
+  background: url("../img/theatre.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 66%; }
+
+/* =================================================================
+Buttons
+================================================================= */
+.app,
+.google {
+  text-indent: -99999px;
+  max-width: 132px;
+  height: 46px;
+  display: block;
+  margin: 0 auto; }
+
+.app {
+  background: url("../img/Download_on_the_App_Store_Badge_US-UK_135x40.svg") no-repeat;
+  width: 48%;
+  background-size: contain;
+  margin-bottom: 1em; }
+
+.google {
+  background: url("../img/google-play-badge.png") no-repeat;
+  width: 48%;
+  background-size: contain; }
+
+.secondary-button {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: .75em .75em .6em;
+  border: 1px solid #fff;
+  width: 189px;
+  margin: 0 auto;
+  display: block;
+  color: #c0acd1;
+  font-size: 20px;
+  margin-top: 1em;
+  width: 151px;
+  border: 1px solid #c0acd1; }
+
+/* =================================================================
+Footer
+================================================================= */
+footer p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 2em 1em; }
+footer .sister-logo {
+  text-indent: -99999px;
+  display: block;
+  width: 206px;
+  height: 89px;
+  margin: 3em auto;
+  background: url("../img/village-link.png") no-repeat; }
+footer .copyright p {
+  padding: 0 1em; }
+footer .social-nav {
+  margin: 4em auto; }
+
+.icons ul {
+  padding: 4em 2em; }
+  .icons ul a {
+    display: block;
+    text-indent: -9999px;
+    background: url("../img/badges-sprite.png") no-repeat;
+    margin: 0 auto 3em; }
+    .icons ul a.cards {
+      height: 177px;
+      width: 177px; }
+    .icons ul a.passes {
+      width: 100px;
+      height: 212px;
+      background-position: -178px; }
+    .icons ul a.exclusives {
+      width: 192px;
+      height: 167px;
+      background-position: -278px 0px; }
+    .icons ul a.screening {
+      width: 126px;
+      height: 200px;
+      background-position: -470px -1px; }
+    .icons ul a.rentals {
+      width: 112px;
+      height: 209px;
+      background-position: -597px; }
+    .icons ul a.ads {
+      width: 121px;
+      height: 144px;
+      background-position: -709px 0px; }
+    .icons ul a.events {
+      width: 156px;
+      height: 156px;
+      background-position: -829px 0px; }
+.icons::before, .icons::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: url("../img/border.jpg") repeat; }
+.icons::after {
+  background-position: 50%; }
 
 /*# sourceMappingURL=style.css.map */
