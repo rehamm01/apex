@@ -12,12 +12,13 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-animate.js"></script>
+	<script src="script.js"></script>
 
 </head>
 
-<body id="baxter">
+<body id="baxter" ng-app="includeBody">
 
 	<header>
 		<div id="mobileNav" class="overlay">
@@ -69,7 +70,7 @@
 			<p>No cameras or recording devices are permitted inside the theatres.</p>
 		</div>
 
-		<div class="buttons">
+		<div class="button-container">
 			<a class="app" href="https://itunes.apple.com/app/apex-theatres/id563273944?mt=8">Download our app on the App Store</a>
 
 			<a class="google" href="https://play.google.com/store/apps/details?id=com.interactivemedialab.apex.theatres&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5pbnRlcmFjdGl2ZW1lZGlhbGFiLmFwZXgudGhlYXRyZXMiXQ">Download our app on Google Play</a>
@@ -90,9 +91,9 @@
 		</h2>
 	</div>
 
-	<div ng-include="'nowshowing.html'"></div>
-	<section id="now-showing"></section>
-	<nowshowing></nowshowing>
+	<div ng-controller="NowShowing">
+		<section id="now-showing" ng-include="'now-showing.html'"></section>
+	</div>
 
 	<section id="coming-soon"></section>
 
@@ -149,15 +150,17 @@
 	</section>
 
 	<div class="icons">
-		<ul>
-			<li><a href="" class="cards">Gift Cards</a></li>
-			<li><a href="" class="passes">Guest Passes</a></li>
-			<li><a href="" class="exclusives">Louisville Exclusives Club</a></li>
-			<li><a href="" class="screening">Screening Room</a></li>
-			<li><a href="" class="rentals">Theater Rentals</a></li>
-			<li><a href="" class="ads">Onscreen Advertising</a></li>
-			<li><a href="" class="events">Special Events</a></li>
-		</ul>
+		<div class="wrapper2">
+			<ul>
+				<li><a href="" class="cards">Gift Cards</a></li>
+				<li><a href="" class="passes">Guest Passes</a></li>
+				<li><a href="" class="exclusives">Louisville Exclusives Club</a></li>
+				<li><a href="" class="screening">Screening Room</a></li>
+				<li><a href="" class="rentals">Theater Rentals</a></li>
+				<li><a href="" class="ads">Onscreen Advertising</a></li>
+				<li><a href="" class="events">Special Events</a></li>
+			</ul>
+		</div>
 	</div>
 
 	<footer>
@@ -195,6 +198,7 @@
 	    document.getElementById("mobileNav").style.height = "0%";
 	}
 </script>
+
 
 </body>
 
