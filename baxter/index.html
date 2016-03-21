@@ -217,21 +217,37 @@
 	    center: myLatLng
 	});
 
+	var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<div id="bodyContent">'+
+      '<p><b>Baxter Avenue Theatres Filmworks</b></p>' +
+      '<p>Mid City Mall, 1250 Bardstown Rd,</p>' + 
+      '<p>Louisville, KY 40204</p>' +
+      '<a href="">View in Google Maps</a>'+
+      '</div>'+
+      '</div>';
+
+	var infowindow = new google.maps.InfoWindow({
+    	content: contentString
+	});
+
 	var marker = new google.maps.Marker({
 		position: myLatLng,
 	    map: map,
 	    title: 'Baxter Avenue Theatres Filmworks'
 	});
 
-
 	var image = 'http://rehamm01.github.io/apex/baxter/img/baxterMarker.png';
-	var beachMarker = new google.maps.Marker({
+	var baxterMarker = new google.maps.Marker({
 		position: {lat: 38.234988, lng: -85.717734},
 		map: map,
 		icon: image
 	});
+		marker.addListener('click', function() {
+    	infowindow.open(map, marker);
+	});
 
-	marker.setMap(map);
 }
 </script>
 
