@@ -7,7 +7,6 @@ moduleA.controller("NowShowing", function($scope) {
 
 var moduleB = angular.module("MyModuleB", []);
 moduleB.controller("ComingSoon", function($scope) {
-	alert("this is working");
     $scope.templates =
       [ { name: 'coming-soon.html', url: 'coming-soon.html'}];
     $scope.template = $scope.templates[0];
