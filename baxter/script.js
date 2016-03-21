@@ -7,3 +7,13 @@ angular.module('includeBody', ['ngAnimate'])
     $scope.template = $scope.templates[0];
   }]);
 })(window.angular);
+
+(function(angular) {
+  'use strict';
+angular.module('includeBody', ['ngAnimate'])
+  .controller('ComingSoon', ['$scope', function($scope) {
+    $scope.templates =
+      [ { name: 'coming-soon.html', url: 'coming-soon.html'}];
+    $scope.template = $scope.templates[0];
+  }]);
+})(window.angular);
