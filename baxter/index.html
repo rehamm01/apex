@@ -209,15 +209,25 @@
 </script>
 
 <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 38.234988, lng: -85.717734},
-          zoom: 12
-        });
-      }
-    </script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2NbzdrA22scWPse1vebR2F3mZxyiNsYY&callback=initMap"
+	function initMap() {
+	var myLatLng = {lat: 38.234988, lng: -85.717734};
+
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 14,
+	    center: myLatLng
+	});
+
+	var marker = new google.maps.Marker({
+		position: myLatLng,
+	    map: map,
+	    title: 'Baxter Avenue Theatres Filmworks'
+	});
+
+	marker.setMap(map);
+}
+</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2NbzdrA22scWPse1vebR2F3mZxyiNsYY&callback=initMap"
     async defer></script>
 
 
