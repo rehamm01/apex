@@ -10,6 +10,6 @@ angular.module('includeBody', ['ngAnimate'])
   .controller('ComingSoon', ['$scope', function($scope) {
     $scope.templates =
       [ { name: 'coming-soon.html', url: 'coming-soon.html'}];
-    $scope.template = $scope.templates[0];
+    $scope.template = $scope.templates[1];
   }]);
 })(window.angular);
