@@ -94,12 +94,16 @@
 		</h2>
 	</div>
 
-	<div ng-controller="NowShowing">
-		<section id="now-showing" ng-include="'now-showing.html'"></section>
+	<div id="now-showing">
+    	<div ng-controller="NowShowing">
+        	<div ng-include="template.url"></div>
+	    </div>
 	</div>
 
-	<div ng-controller="ComingSoon">
-		<section id="coming-soon" ng-include="'coming-soon.html'"></section>
+	<div id="coming-soon">
+	    <div ng-controller="ComingSoon">
+	        <div ng-include="template.url"></div>
+	    </div>
 	</div>
 
 	<div class="image1"></div>

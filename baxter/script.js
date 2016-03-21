@@ -1,15 +1,18 @@
-(function(angular) {
-  'use strict';
-angular.module('includeBody', ['ngAnimate'])
-  .controller('NowShowing', ['$scope', function($scope) {
+var moduleA = angular.module("MyModuleA", []);
+moduleA.controller("NowShowing", function($scope) {
     $scope.templates =
-      [ { name: 'now-showing.html', url: 'now-showing.html'}];
+      [ { name: 'template1.html', url: 'template1.html'}];
     $scope.template = $scope.templates[0];
-  }]);
+});
 
-  .controller('ComingSoon', ['$scope', function($scope) {
+var moduleB = angular.module("MyModuleB", []);
+moduleB.controller("ComingSoon", function($scope) {
     $scope.templates =
-      [ { name: 'coming-soon.html', url: 'coming-soon.html'}];
-    $scope.template = $scope.templates[1];
-  }]);
-})(window.angular);
+      [ { name: 'template2.html', url: 'template2.html'}];
+    $scope.template = $scope.templates[0];
+});
+
+angular.element(document).ready(function() {
+    angular.bootstrap(document.getElementById("now-showing"), ["MyModuleA"]);
+    angular.bootstrap(document.getElementById("coming-soon"), ["MyModuleB"]);
+});
