@@ -227,10 +227,11 @@
       var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location
+        icon: 'http://rehamm01.github.io/apex/baxter/img/baxterMarker.png'
       });
       google.maps.event.addListener(marker, 'click', function() {
         infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-          'Place ID: ' + place.place_id + '<br>' +
+          'Place ID:  ' + place.place_id + '<br>' +
           place.formatted_address + '</div>');
         infowindow.open(map, this);
       });
