@@ -711,4 +711,16 @@ Map
 /* line 674, ../scss/style.scss */
 #map {
   height: 100%;
+  color: #000;
+  line-height: 1.8em;
+}
+/* line 679, ../scss/style.scss */
+#map strong {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* line 684, ../scss/style.scss */
+#map a {
+  font-weight: bold;
+  text-decoration: underline;
 }
