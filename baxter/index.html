@@ -224,10 +224,11 @@
     placeId: 'ChIJy6uAZNIMaYgR76bVMjQZLJ8'
   }, function(place, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
-      var marker = new google.maps.Marker({
+		var image = 'http://rehamm01.github.io/apex/baxter/img/baxterMarker.png';
+		var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location
-        icon: 'http://rehamm01.github.io/apex/baxter/img/baxterMarker.png'
+        icon: image
       });
       google.maps.event.addListener(marker, 'click', function() {
         infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
