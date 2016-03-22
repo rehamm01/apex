@@ -521,6 +521,7 @@ Now Showing and Coming Soon
 #now-showing,
 #coming-soon {
 	max-width: 900px;
+	margin: 0 auto;
 
 	ul {
 		@include breakpoint($end-small) {
@@ -552,6 +553,12 @@ Now Showing and Coming Soon
 		    -webkit-align-items: flex-start;
 		    -ms-flex-align: start;
 		    align-items: flex-start;
+		    width: 75%;
+    		margin: 0 auto;
+		}
+
+		@include breakpoint(700px) {
+			width: 100%;
 		}
 	}
 
@@ -575,6 +582,7 @@ Now Showing and Coming Soon
 			    -webkit-align-self: auto;
 			    -ms-flex-item-align: auto;
 			    align-self: auto;
+			    margin: 0 1% 2.5em;
 	    	}
 	}
 }
@@ -616,6 +624,10 @@ Footer
 ================================================================= */
 
 footer {
+		@include breakpoint(700px) {
+			padding: 2em;
+		}
+
 	p {
 		font-size: 1.2em;
 	    text-transform: uppercase;
@@ -630,17 +642,65 @@ footer {
 	    height: 89px;
 	    margin: 3em auto;
 	    background: url('../img/village-link.png') no-repeat;
+
+	    	@include breakpoint(700px) {
+	    		float: right;
+	    	}
 	}
 
 	.copyright {
 
 		p {
 			padding: 0 1em;
+
+				@include breakpoint(700px) {
+					padding: 0 1em 0 0;
+    				float: left;
+
+    				&::after {
+					    content: "•";
+					    margin-left: 1em;
+					}
+
+					&:last-of-type::after {
+					    content: none;
+					}
+				}
 		}
 	}
 
 	.social-nav {
 		margin: 4em auto;
+
+			@include breakpoint(700px) {
+				max-width: 240px;
+				margin: 4em 0;
+			}
+
+		a {
+			@include breakpoint(700px) {
+			    height: 51px;
+			    width: 51px;
+			    background-size: 252px;
+
+			    &.facebook {
+				    background-position: 0;
+				}
+
+				&.twitter {
+				    background-position: -51px 0;
+				}
+
+				&.instagram {
+				    background-position: -100px 0;
+				}
+
+				&.email {
+				    background-position: -151px 0;
+				    margin-left: 45px;
+				}
+			}
+		}
 	}
 }
 

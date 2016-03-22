@@ -571,9 +571,10 @@ Now Showing and Coming Soon
 #now-showing,
 #coming-soon {
   max-width: 900px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 600px) {
-  /* line 525, ../scss/style.scss */
+  /* line 526, ../scss/style.scss */
   #now-showing ul,
   #coming-soon ul {
     display: -webkit-box;
@@ -604,9 +605,18 @@ Now Showing and Coming Soon
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
+    width: 75%;
+    margin: 0 auto;
   }
 }
-/* line 558, ../scss/style.scss */
+@media screen and (min-width: 700px) {
+  /* line 526, ../scss/style.scss */
+  #now-showing ul,
+  #coming-soon ul {
+    width: 100%;
+  }
+}
+/* line 565, ../scss/style.scss */
 #now-showing li,
 #coming-soon li {
   width: 188px;
@@ -615,7 +625,7 @@ Now Showing and Coming Soon
   margin: 0 auto 2em;
 }
 @media screen and (min-width: 600px) {
-  /* line 558, ../scss/style.scss */
+  /* line 565, ../scss/style.scss */
   #now-showing li,
   #coming-soon li {
     -webkit-box-ordinal-group: 1;
@@ -631,13 +641,14 @@ Now Showing and Coming Soon
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+    margin: 0 1% 2.5em;
   }
 }
 
 /* =================================================================
 Map
 ================================================================= */
-/* line 586, ../scss/style.scss */
+/* line 594, ../scss/style.scss */
 #map {
   height: 50%;
   color: #000;
@@ -646,24 +657,24 @@ Map
   margin: 8em 6%;
 }
 @media screen and (min-width: 800px) {
-  /* line 586, ../scss/style.scss */
+  /* line 594, ../scss/style.scss */
   #map {
     height: 75%;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 586, ../scss/style.scss */
+  /* line 594, ../scss/style.scss */
   #map {
     max-width: 840px;
     margin: 8em auto;
   }
 }
-/* line 602, ../scss/style.scss */
+/* line 610, ../scss/style.scss */
 #map strong {
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 607, ../scss/style.scss */
+/* line 615, ../scss/style.scss */
 #map a {
   font-weight: bold;
   text-decoration: underline;
@@ -673,14 +684,20 @@ Map
 /* =================================================================
 Footer
 ================================================================= */
-/* line 619, ../scss/style.scss */
+@media screen and (min-width: 700px) {
+  /* line 626, ../scss/style.scss */
+  footer {
+    padding: 2em;
+  }
+}
+/* line 631, ../scss/style.scss */
 footer p {
   font-size: 1.2em;
   text-transform: uppercase;
   text-align: left;
   padding: 2em 1em;
 }
-/* line 626, ../scss/style.scss */
+/* line 638, ../scss/style.scss */
 footer .sister-logo {
   text-indent: -99999px;
   display: block;
@@ -689,21 +706,75 @@ footer .sister-logo {
   margin: 3em auto;
   background: url("../img/village-link.png") no-repeat;
 }
-/* line 637, ../scss/style.scss */
+@media screen and (min-width: 700px) {
+  /* line 638, ../scss/style.scss */
+  footer .sister-logo {
+    float: right;
+  }
+}
+/* line 653, ../scss/style.scss */
 footer .copyright p {
   padding: 0 1em;
 }
-/* line 642, ../scss/style.scss */
+@media screen and (min-width: 700px) {
+  /* line 653, ../scss/style.scss */
+  footer .copyright p {
+    padding: 0 1em 0 0;
+    float: left;
+  }
+  /* line 660, ../scss/style.scss */
+  footer .copyright p::after {
+    content: "•";
+    margin-left: 1em;
+  }
+  /* line 665, ../scss/style.scss */
+  footer .copyright p:last-of-type::after {
+    content: none;
+  }
+}
+/* line 672, ../scss/style.scss */
 footer .social-nav {
   margin: 4em auto;
 }
+@media screen and (min-width: 700px) {
+  /* line 672, ../scss/style.scss */
+  footer .social-nav {
+    max-width: 240px;
+    margin: 4em 0;
+  }
+}
+@media screen and (min-width: 700px) {
+  /* line 680, ../scss/style.scss */
+  footer .social-nav a {
+    height: 51px;
+    width: 51px;
+    background-size: 252px;
+  }
+  /* line 686, ../scss/style.scss */
+  footer .social-nav a.facebook {
+    background-position: 0;
+  }
+  /* line 690, ../scss/style.scss */
+  footer .social-nav a.twitter {
+    background-position: -51px 0;
+  }
+  /* line 694, ../scss/style.scss */
+  footer .social-nav a.instagram {
+    background-position: -100px 0;
+  }
+  /* line 698, ../scss/style.scss */
+  footer .social-nav a.email {
+    background-position: -151px 0;
+    margin-left: 45px;
+  }
+}
 
-/* line 649, ../scss/style.scss */
+/* line 709, ../scss/style.scss */
 .icons ul {
   padding: 4em 2em;
 }
 @media screen and (min-width: 600px) {
-  /* line 649, ../scss/style.scss */
+  /* line 709, ../scss/style.scss */
   .icons ul {
     display: -webkit-box;
     display: -moz-box;
@@ -735,7 +806,7 @@ footer .social-nav {
     align-items: stretch;
   }
 }
-/* line 683, ../scss/style.scss */
+/* line 743, ../scss/style.scss */
 .icons ul li {
   margin: 0 1%;
   -webkit-order: 0;
@@ -750,55 +821,55 @@ footer .social-nav {
   -ms-flex-item-align: center;
   align-self: center;
 }
-/* line 699, ../scss/style.scss */
+/* line 759, ../scss/style.scss */
 .icons ul a {
   display: block;
   text-indent: -9999px;
   background: url("../img/badges-sprite.png") no-repeat;
   margin: 0 auto 3em;
 }
-/* line 705, ../scss/style.scss */
+/* line 765, ../scss/style.scss */
 .icons ul a.cards {
   height: 177px;
   width: 177px;
 }
-/* line 710, ../scss/style.scss */
+/* line 770, ../scss/style.scss */
 .icons ul a.passes {
   width: 100px;
   height: 212px;
   background-position: -178px;
 }
-/* line 716, ../scss/style.scss */
+/* line 776, ../scss/style.scss */
 .icons ul a.exclusives {
   width: 192px;
   height: 167px;
   background-position: -278px 0px;
 }
-/* line 722, ../scss/style.scss */
+/* line 782, ../scss/style.scss */
 .icons ul a.screening {
   width: 126px;
   height: 200px;
   background-position: -470px -1px;
 }
-/* line 728, ../scss/style.scss */
+/* line 788, ../scss/style.scss */
 .icons ul a.rentals {
   width: 112px;
   height: 209px;
   background-position: -597px;
 }
-/* line 734, ../scss/style.scss */
+/* line 794, ../scss/style.scss */
 .icons ul a.ads {
   width: 121px;
   height: 144px;
   background-position: -709px 0px;
 }
-/* line 740, ../scss/style.scss */
+/* line 800, ../scss/style.scss */
 .icons ul a.events {
   width: 156px;
   height: 156px;
   background-position: -829px 0px;
 }
-/* line 749, ../scss/style.scss */
+/* line 809, ../scss/style.scss */
 .icons::before, .icons::after {
   content: "";
   display: block;
@@ -806,7 +877,7 @@ footer .social-nav {
   height: 3px;
   background: url("../img/border.jpg") repeat;
 }
-/* line 757, ../scss/style.scss */
+/* line 817, ../scss/style.scss */
 .icons::after {
   background-position: 50%;
 }
