@@ -232,7 +232,7 @@
         });
         google.maps.event.addListener(marker, 'click', function() {
           infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-            place.formatted_address + '</div>');
+            place.formatted_address + '<br><a href="https://www.google.com/maps/place/Baxter+Avenue+Theatres/@38.23476,-85.7199017,17z/data=!3m1!4b1!4m2!3m1!1s0x88690cd26480abcb:0x9f2c193432d5a6ef">Open in Google Maps</a></div>');
           infowindow.open(map, this);
         });
       }
