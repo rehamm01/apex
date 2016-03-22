@@ -219,12 +219,12 @@
 
 	var infowindow = new google.maps.InfoWindow();
   var service = new google.maps.places.PlacesService(map);
+  var image = 'http://rehamm01.github.io/apex/baxter/img/baxterMarker.png';
 
   service.getDetails({
     placeId: 'ChIJy6uAZNIMaYgR76bVMjQZLJ8'
   }, function(place, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
-		var image = 'http://rehamm01.github.io/apex/baxter/img/baxterMarker.png';
 		var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location
