@@ -143,8 +143,8 @@ h3 {
 p {
     text-align: center;
     padding-bottom: 1em;
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 1.8em;
+    line-height: 2em;
 }
 
 a {
@@ -458,28 +458,6 @@ Images
 Buttons
 ================================================================= */
 
-.btn:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.btn-fx:after {
-    width: 0;
-    height: 103%;
-    top: 50%;
-    left: 50%;
-    background: #fff;
-    opacity: 0;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
 .btn {
     background: none;
     cursor: pointer;
@@ -500,22 +478,69 @@ Buttons
     display: block;
     text-align: center;
     width: 246px;
+
+    &:after {
+	    content: '';
+	    position: absolute;
+	    z-index: -1;
+	    -webkit-transition: all 0.3s;
+	    -moz-transition: all 0.3s;
+	    transition: all 0.3s;
+	}
 }
 
 .btn-fx {
     overflow: hidden;
+
+	&:after {
+	    width: 0;
+	    height: 103%;
+	    top: 50%;
+	    left: 50%;
+	    background: #fff;
+	    opacity: 0;
+	    -webkit-transform: translateX(-50%) translateY(-50%);
+	    -moz-transform: translateX(-50%) translateY(-50%);
+	    -ms-transform: translateX(-50%) translateY(-50%);
+	    transform: translateX(-50%) translateY(-50%);
+	}
+
+	&:hover, 
+	&:active {
+	    color: $light-gradient;
+	}
+
+	&:hover:after {
+	    width: 90%;
+	    opacity: 1;
+	    z-index: -1;
+	}
 }
 
-.btn-fx:hover:after {
-    width: 90%;
-    opacity: 1;
-    z-index: -1;
+.secondary-button {
+	position: relative;
+	z-index: 100;
+
+	a {
+		@include button;
+		color: #c0acd1;
+		font-size: 20px;
+	    margin-top: 1em;
+	    width: 195px;
+	    border: 2px solid #c0acd1;
+	    text-align: center;
+	}
+
+	.btn-fx:after {
+		background-color: #c0acd1;
+	}
+
+	.btn-fx:hover, 
+	.btn-fx:active {
+	    color: #000;
+	}
 }
 
-.btn-fx:hover, 
-.btn-fx:active {
-    color: #000;
-}
 
 .button-container {
 	@include clearfix;
@@ -550,16 +575,6 @@ Buttons
 	@include breakpoint($end-small) {
 		float: right;
 	}
-}
-
-.secondary-button {
-	@include button;
-	color: #c0acd1;
-	font-size: 20px;
-    margin-top: 1em;
-    width: 155px;
-    border: 1px solid #c0acd1;
-    text-align: center;
 }
 
 /* =================================================================
@@ -738,7 +753,7 @@ footer {
 	.link-buttons {
 		@include breakpoint(700px) {
 			margin: 0 auto 2em;
-    		width: 591px;	
+    		width: 595px;	
 		}
 
 		@include breakpoint(950px) {
