@@ -15,7 +15,7 @@
 	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-animate.js"></script>
-	<script src="script.js"></script>
+	<script src="js/script.js"></script>
 	
 </head>
 
@@ -36,7 +36,7 @@
 		</div>
 
 		<div class="header-image">
-			<h1>
+			<h1 data-top="opacity: 1" data--300-top="opacity: 0">
 				<img src="img/logo.png" /> Baxter Avenue Theatres Filmworks
 			</h1>
 		</div>
@@ -72,7 +72,7 @@
 
 	<div id="tickets" class="gradient">
 		<h2>
-			<a class="btn btn-fx" href="">Buy Tickets</a>
+			<a class="btn btn-fx" href="http://37.formovietickets.com:2235/">Buy Tickets</a>
 		</h2>
 	</div>
 
@@ -92,17 +92,17 @@
 	    </div>
 	</section>
 
-	<div class="image1"></div>
+	<div class="image1" alt="Exterior shot of Baxter Avenue Theatres Filmworks at night" data-bottom-top="background-position: 0% 0%" data-top-bottom="background-position: 30% -50%"></div>
 
 	<section id="exclusives">
 		<h3>Louisville Exclusives at Baxter</h3>
 
 		<p><span class="title">The Boy &amp; the Beast</span> <span class="date">March 15, 2016</span></p>
 
-		<div class="secondary-button"><a href="" class="btn btn-fx">Buy Tickets</a></div>
+		<div class="secondary-button"><a href="http://37.formovietickets.com:2235/" class="btn btn-fx">Buy Tickets</a></div>
 	</section>
 
-	<div class="image2"></div>
+	<div class="image2" alt="Bolshoi Ballet production of Swan Lake. Photo taken by Damir Yusupov" data-bottom-top="background-position: 30% -100%" data-top-bottom="background-position: 0% 0%"></div>
 
 	<section id="bolshoi" class="gradient">
 		<h3>Bolshoi Ballet Live</h3>
@@ -111,7 +111,7 @@
 
 		<p><span class="title">Don Quixote</span> <span class="date">Live from Moscow &ndash; Sunday, April 15, 2016 at 12:55pm</span></p>
 
-		<div class="secondary-button"><a href="" class="btn btn-fx">Buy Tickets</a></div>
+		<div class="secondary-button"><a href="http://37.formovietickets.com:2235/" class="btn btn-fx">Buy Tickets</a></div>
 	</section>
 
 	<section id="nat-theater">
@@ -119,17 +119,17 @@
 
 		<p><span class="title">As You Like It</span> <span class="date">Thursday, February 25, 2016 at 2pm</span></p>
 
-		<div class="secondary-button"><a href="" class="btn btn-fx">Buy Tickets</a></div>
+		<div class="secondary-button"><a href="http://37.formovietickets.com:2235/" class="btn btn-fx">Buy Tickets</a></div>
 	</section>
 
-	<div class="image3"></div>
+	<div class="image3" alt="National Theatre production of Treasure Island. Photo taken by Johan Persson" data-bottom-top="background-position: 0% 0%" data-top-bottom="background-position: 30% -50%"></div>
 
 	<section id="midnights" class="gradient">
 		<h3>Midnights at the Baxter</h3>
 
 		<p><span class="title">Out of Sight</span> <span class="date">Saturday, March 19, 2016 at 11:55pm</span></p>
 
-		<div class="secondary-button"><a href="" class="btn btn-fx">Buy Tickets</a></div>
+		<div class="secondary-button"><a href="http://37.formovietickets.com:2235/" class="btn btn-fx">Buy Tickets</a></div>
 	</section>
 
 	<div id="map"><div class="wrapper"></div></div>
@@ -226,6 +226,12 @@
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2NbzdrA22scWPse1vebR2F3mZxyiNsYY&libraries=places&callback=initMap">
 </script>
 
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init({
+    	forceHeight: false
+    });
+</script>
 
 </body>
 

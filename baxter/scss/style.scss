@@ -202,7 +202,7 @@ header
 
 			@include breakpoint($end-small) {
 				padding-top: 0;
-				height: 90vh;
+				height: 100vh;
 				display: table;
 				width: 100%;
 			}
@@ -436,21 +436,24 @@ Images
 ================================================================= */
 
 .image1 {
-	background: url('../img/baxter-exterior.jpg') no-repeat;
+	background: url('../img/1baxter-exterior.jpg') no-repeat;
 	background-size: cover;
-	padding-top: 53.5%;
+	padding-top: 30%;
+	background-attachment: fixed;
 }
 
 .image2 {
 	background: url('../img/bolshoi.jpg') no-repeat;
 	background-size: cover;
-	padding-top: 66%;
+	padding-top: 30%;
+	background-attachment: fixed;
 }
 
 .image3 {
 	background: url('../img/theatre.jpg') no-repeat;
 	background-size: cover;
-	padding-top: 66%;
+	padding-top: 30%;
+	background-attachment: fixed;
 }
 
 
@@ -627,7 +630,7 @@ Now Showing and Coming Soon
 	li {
 		width: 188px;
 	    height: 262px;
-	    background-color: #292a33;
+	    background-color: $light-gradient;
 	    margin: 0 auto 2em;
 
 	    	@include breakpoint($end-small) {
@@ -646,6 +649,10 @@ Now Showing and Coming Soon
 			    align-self: auto;
 			    margin: 0 1% 2.5em;
 	    	}
+	}
+
+	a:hover img {
+		opacity: .4;
 	}
 }
 
