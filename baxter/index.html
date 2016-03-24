@@ -22,23 +22,10 @@
 <body id="baxter">
 
 	<header> 
-		<div id="mobileNav" class="overlay">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-		  <div class="overlay-content">
-		    <a onclick="closeNav()" href="#tickets">Tickets</a>
-		    <a onclick="closeNav()" href="#now-showing">Now Showing</a>
-		    <a onclick="closeNav()" href="#coming-soon">Coming Soon</a>
-		    <a onclick="closeNav()" href="#exclusives">Exclusives</a>
-		    <a onclick="closeNav()" href="#bolshoi">Bolshoi Ballet</a>
-		    <a onclick="closeNav()" href="#nat-theater">National Theatre</a>
-		    <a onclick="closeNav()" href="#midnights">Midnights at the Baxter</a>
-		    <a onclick="closeNav()" href="#map">Location</a>
-		  </div>
-		</div>
 
-		<div id="desktopNav">
-		  <div class="overlay-content">
-		    <a href="#tickets">Tickets</a>
+		<div class="menu"></div>
+		<div class="navsect hide1">
+			<a href="#tickets">Tickets</a>
 		    <a href="#now-showing">Now Showing</a>
 		    <a href="#coming-soon">Coming Soon</a>
 		    <a href="#exclusives">Exclusives</a>
@@ -46,10 +33,7 @@
 		    <a href="#nat-theater">National Theatre</a>
 		    <a href="#midnights">Midnights at the Baxter</a>
 		    <a href="#map">Location</a>
-		  </div>
 		</div>
-
-		<span class="menu" onclick="openNav()">Menu Open</span>
 
 		<div class="header-image">
 			<h1>
@@ -72,9 +56,9 @@
 		</div>
 
 		<div class="button-container">
-			<a class="app" href="https://itunes.apple.com/app/apex-theatres/id563273944?mt=8">Download our app on the App Store</a>
+			<a class="app" href="https://itunes.apple.com/app/apex-theatres/id563273944?mt=8"><img src="img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download our app on the App Store"></a>
 
-			<a class="google" href="https://play.google.com/store/apps/details?id=com.interactivemedialab.apex.theatres&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5pbnRlcmFjdGl2ZW1lZGlhbGFiLmFwZXgudGhlYXRyZXMiXQ">Download our app on Google Play</a>
+			<a class="google" href="https://play.google.com/store/apps/details?id=com.interactivemedialab.apex.theatres&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5pbnRlcmFjdGl2ZW1lZGlhbGFiLmFwZXgudGhlYXRyZXMiXQ"><img src="img/google-play-badge.png" alt="Download our app on Google Play"></a>
 		</div>
 
 		<ul class="social-nav">
@@ -88,7 +72,7 @@
 
 	<div id="tickets" class="gradient">
 		<h2>
-			<a class="button" href="">Buy Tickets</a>
+			<a class="btn btn-fx" href="">Buy Tickets</a>
 		</h2>
 	</div>
 
@@ -173,20 +157,23 @@
 	</div>
 
 	<footer>
-		<div class="wrapper">
+		<div class="wrapper2">
 			<a href="/" class="sister-logo">Visit our sister location: Village 8 Theaters</a>
 
-			<a class="app" href="/">Download our app on the App Store</a>
+			<div class="link-buttons">
+				<ul class="social-nav">
+					<li><a class="facebook" href="https://www.facebook.com/Baxter-Avenue-Theaters-Filmworks-OFFICIAL-199866953417149/?fref=ts">Facebook</a></li>
+					<li><a class="twitter" href="https://twitter.com/apexfilmworks">Twitter</a></li>
+					<li><a class="instagram" href="/">Instagram</a></li>
+					<li><a class="email" href="mailto:info@apextheatres.com">Email</a></li>
+					<li><a class="phone mobile" href="tel:1-502-456-4404">Phone</a></li>
+				</ul>
 
-			<a class="google" href="/">Download our app on Google Play</a>
-
-			<ul class="social-nav">
-				<li><a class="facebook" href="https://www.facebook.com/Baxter-Avenue-Theaters-Filmworks-OFFICIAL-199866953417149/?fref=ts">Facebook</a></li>
-				<li><a class="twitter" href="https://twitter.com/apexfilmworks">Twitter</a></li>
-				<li><a class="instagram" href="/">Instagram</a></li>
-				<li><a class="email" href="mailto:info@apextheatres.com">Email</a></li>
-				<li><a class="phone mobile" href="tel:1-502-456-4404">Phone</a></li>
-			</ul>
+				<div class="app-buttons">
+					<a class="app" href="https://itunes.apple.com/app/apex-theatres/id563273944?mt=8"><img src="img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download our app on the App Store"></a>
+					<a class="google" href="https://play.google.com/store/apps/details?id=com.interactivemedialab.apex.theatres&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5pbnRlcmFjdGl2ZW1lZGlhbGFiLmFwZXgudGhlYXRyZXMiXQ"><img src="img/google-play-badge.png" alt="Download our app on Google Play"></a>
+				</div>
+			</div>
 
 			<div class="copyright">
 				<p>&copy;2015 Apex Entertainment, LLC</p>
@@ -195,19 +182,20 @@
 				<p>(502) 458-2994</p>
 			</div>
 
-			<a href="/" class="village"><img src="" /></a>
 		</div>
 	</footer>
 
 
 <script> 
-	function openNav() {
-	    document.getElementById("mobileNav").style.height = "100%";
-	}
-
-	function closeNav() {
-	    document.getElementById("mobileNav").style.height = "0%";
-	}
+	$(document).ready(function () {
+		$( ".menu" ).click(function() {
+			$( ".navsect" ).toggleClass( "hide1" );
+			$( this ).toggleClass( "close" );
+			$('.navsect a').on('click', function(){
+			    $('.menu').trigger('click');
+			});
+		});
+	});
 </script>
 
 <script>
