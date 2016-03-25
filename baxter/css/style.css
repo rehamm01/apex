@@ -537,118 +537,10 @@ Images
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-  /* line 508, ../scss/style.scss */
-  .image1,
-  .image2,
-  .image3 {
-    background-size: cover;
-    padding-top: 50%;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-position: center;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 523, ../scss/style.scss */
-  .image1,
-  .image2,
-  .image3 {
-    background-size: cover;
-    padding-top: 50%;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-position: center;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 538, ../scss/style.scss */
-  .image1,
-  .image2,
-  .image3 {
-    background-size: cover;
-    padding-top: 50%;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-position: center;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 553, ../scss/style.scss */
-  .image1,
-  .image2,
-  .image3 {
-    background-size: cover;
-    padding-top: 50%;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-position: center;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 568, ../scss/style.scss */
-  .image1,
-  .image2,
-  .image3 {
-    background-size: cover;
-    padding-top: 50%;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-position: center;
-  }
-}
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  /* line 583, ../scss/style.scss */
-  .image1,
-  .image2,
-  .image3 {
-    background-size: cover;
-    padding-top: 50%;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-position: center;
-  }
-}
-@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
-  /* line 599, ../scss/style.scss */
-  .image1,
-  .image2,
-  .image3 {
-    background-size: cover;
-    padding-top: 50%;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-position: center;
-  }
-}
-@media screen and (min-device-width: 1080px) and (max-device-width: 1920px) and (min-resolution: 401dpi) and (device-aspect-ratio: 16 / 9) {
-  /* line 616, ../scss/style.scss */
-  .image1,
-  .image2,
-  .image3 {
-    background-size: cover;
-    padding-top: 50%;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-position: center;
-  }
-}
-@media screen and (min-device-width: 750px) and (max-device-width: 1334px) and (min-resolution: 326dpi) {
-  /* line 632, ../scss/style.scss */
-  .image1,
-  .image2,
-  .image3 {
-    background-size: cover;
-    padding-top: 50%;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-position: center;
-  }
-}
 /* =================================================================
 Buttons
 ================================================================= */
-/* line 646, ../scss/style.scss */
+/* line 507, ../scss/style.scss */
 .btn {
   background: none;
   cursor: pointer;
@@ -670,7 +562,7 @@ Buttons
   text-align: center;
   width: 255px;
 }
-/* line 667, ../scss/style.scss */
+/* line 528, ../scss/style.scss */
 .btn:after {
   content: '';
   position: absolute;
@@ -680,11 +572,11 @@ Buttons
   transition: all 0.3s;
 }
 
-/* line 677, ../scss/style.scss */
+/* line 538, ../scss/style.scss */
 .btn-fx {
   overflow: hidden;
 }
-/* line 680, ../scss/style.scss */
+/* line 541, ../scss/style.scss */
 .btn-fx:after {
   width: 0;
   height: 103%;
@@ -697,23 +589,23 @@ Buttons
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 694, ../scss/style.scss */
+/* line 555, ../scss/style.scss */
 .btn-fx:hover, .btn-fx:active {
   color: #310d43;
 }
-/* line 698, ../scss/style.scss */
+/* line 559, ../scss/style.scss */
 .btn-fx:hover:after {
   width: 90%;
   opacity: 1;
   z-index: -1;
 }
 
-/* line 705, ../scss/style.scss */
+/* line 566, ../scss/style.scss */
 .secondary-button {
   position: relative;
   z-index: 100;
 }
-/* line 709, ../scss/style.scss */
+/* line 570, ../scss/style.scss */
 .secondary-button a {
   font-size: 25px;
   text-transform: uppercase;
@@ -730,17 +622,17 @@ Buttons
   border: 2px solid #c0acd1;
   text-align: center;
 }
-/* line 719, ../scss/style.scss */
+/* line 580, ../scss/style.scss */
 .secondary-button .btn-fx:after {
   background-color: #c0acd1;
 }
-/* line 724, ../scss/style.scss */
+/* line 585, ../scss/style.scss */
 .secondary-button .btn-fx:hover,
 .secondary-button .btn-fx:active {
   color: #000;
 }
 
-/* line 730, ../scss/style.scss */
+/* line 591, ../scss/style.scss */
 .button-container {
   margin: 4em auto;
   display: block;
@@ -754,21 +646,21 @@ Buttons
   width: 100%;
 }
 
-/* line 738, ../scss/style.scss */
+/* line 599, ../scss/style.scss */
 .app,
 .google {
   text-align: center;
   margin: 1em;
   display: block;
 }
-/* line 743, ../scss/style.scss */
+/* line 604, ../scss/style.scss */
 .app img,
 .google img {
   width: 135px;
   margin: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 743, ../scss/style.scss */
+  /* line 604, ../scss/style.scss */
   .app img,
   .google img {
     width: 157px;
@@ -776,14 +668,14 @@ Buttons
 }
 
 @media screen and (min-width: 600px) {
-  /* line 753, ../scss/style.scss */
+  /* line 614, ../scss/style.scss */
   .app {
     float: left;
   }
 }
 
 @media screen and (min-width: 600px) {
-  /* line 759, ../scss/style.scss */
+  /* line 620, ../scss/style.scss */
   .google {
     float: right;
   }
@@ -792,14 +684,14 @@ Buttons
 /* =================================================================
 Now Showing and Coming Soon
 ================================================================= */
-/* line 769, ../scss/style.scss */
+/* line 630, ../scss/style.scss */
 #now-showing,
 #coming-soon {
   max-width: 900px;
   margin: 0 auto;
 }
 @media screen and (min-width: 600px) {
-  /* line 773, ../scss/style.scss */
+  /* line 634, ../scss/style.scss */
   #now-showing ul,
   #coming-soon ul {
     display: -webkit-box;
@@ -835,13 +727,13 @@ Now Showing and Coming Soon
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 773, ../scss/style.scss */
+  /* line 634, ../scss/style.scss */
   #now-showing ul,
   #coming-soon ul {
     width: 100%;
   }
 }
-/* line 812, ../scss/style.scss */
+/* line 673, ../scss/style.scss */
 #now-showing li,
 #coming-soon li {
   width: 188px;
@@ -850,7 +742,7 @@ Now Showing and Coming Soon
   margin: 0 auto 2em;
 }
 @media screen and (min-width: 600px) {
-  /* line 812, ../scss/style.scss */
+  /* line 673, ../scss/style.scss */
   #now-showing li,
   #coming-soon li {
     -webkit-box-ordinal-group: 1;
@@ -869,7 +761,7 @@ Now Showing and Coming Soon
     margin: 0 1% 2.5em;
   }
 }
-/* line 836, ../scss/style.scss */
+/* line 697, ../scss/style.scss */
 #now-showing a:hover img,
 #coming-soon a:hover img {
   opacity: .4;
@@ -878,7 +770,7 @@ Now Showing and Coming Soon
 /* =================================================================
 Map
 ================================================================= */
-/* line 846, ../scss/style.scss */
+/* line 707, ../scss/style.scss */
 #map {
   height: 50%;
   color: #000;
@@ -887,24 +779,24 @@ Map
   margin: 8em 6%;
 }
 @media screen and (min-width: 800px) {
-  /* line 846, ../scss/style.scss */
+  /* line 707, ../scss/style.scss */
   #map {
     height: 75%;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 846, ../scss/style.scss */
+  /* line 707, ../scss/style.scss */
   #map {
     max-width: 840px;
     margin: 8em auto;
   }
 }
-/* line 862, ../scss/style.scss */
+/* line 723, ../scss/style.scss */
 #map strong {
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 867, ../scss/style.scss */
+/* line 728, ../scss/style.scss */
 #map a {
   font-weight: bold;
   text-decoration: underline;
@@ -915,25 +807,25 @@ Map
 Footer
 ================================================================= */
 @media screen and (min-width: 700px) {
-  /* line 878, ../scss/style.scss */
+  /* line 739, ../scss/style.scss */
   footer {
     padding: 2em;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 878, ../scss/style.scss */
+  /* line 739, ../scss/style.scss */
   footer {
     padding: 6em 2em 4em;
   }
 }
-/* line 887, ../scss/style.scss */
+/* line 748, ../scss/style.scss */
 footer p {
   font-size: 1.2em;
   text-transform: uppercase;
   text-align: center;
   padding: 2em 1em;
 }
-/* line 894, ../scss/style.scss */
+/* line 755, ../scss/style.scss */
 footer .sister-logo {
   text-indent: -99999px;
   display: block;
@@ -943,66 +835,66 @@ footer .sister-logo {
   background: url("../img/village-link.png") no-repeat;
 }
 @media screen and (min-width: 950px) {
-  /* line 894, ../scss/style.scss */
+  /* line 755, ../scss/style.scss */
   footer .sister-logo {
     float: right;
     margin: 0;
   }
 }
-/* line 908, ../scss/style.scss */
+/* line 769, ../scss/style.scss */
 footer .copyright {
   padding-bottom: 2em;
   clear: left;
 }
 @media screen and (min-width: 700px) {
-  /* line 908, ../scss/style.scss */
+  /* line 769, ../scss/style.scss */
   footer .copyright {
     text-align: center;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 908, ../scss/style.scss */
+  /* line 769, ../scss/style.scss */
   footer .copyright {
     text-align: left;
     float: left;
   }
 }
-/* line 921, ../scss/style.scss */
+/* line 782, ../scss/style.scss */
 footer .copyright p {
   padding: 0 1em;
 }
 @media screen and (min-width: 700px) {
-  /* line 921, ../scss/style.scss */
+  /* line 782, ../scss/style.scss */
   footer .copyright p {
     display: inline-block;
     padding: 0;
   }
-  /* line 928, ../scss/style.scss */
+  /* line 789, ../scss/style.scss */
   footer .copyright p::after {
     content: "•";
     margin: 0 1em;
   }
-  /* line 933, ../scss/style.scss */
+  /* line 794, ../scss/style.scss */
   footer .copyright p:last-of-type::after {
     content: none;
     margin: 0;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 943, ../scss/style.scss */
+  /* line 804, ../scss/style.scss */
   footer .link-buttons {
     margin: 0 auto 2em;
     width: 595px;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 943, ../scss/style.scss */
+  /* line 804, ../scss/style.scss */
   footer .link-buttons {
     float: left;
     margin: 0 auto 1em;
   }
 }
-/* line 955, ../scss/style.scss */
+/* line 816, ../scss/style.scss */
 footer .app-buttons {
   margin: 4em auto;
   max-width: 354px;
@@ -1015,61 +907,61 @@ footer .app-buttons:after {
   width: 100%;
 }
 @media screen and (min-width: 700px) {
-  /* line 955, ../scss/style.scss */
+  /* line 816, ../scss/style.scss */
   footer .app-buttons {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
   }
 }
-/* line 967, ../scss/style.scss */
+/* line 828, ../scss/style.scss */
 footer .social-nav {
   margin: 4em auto;
 }
 @media screen and (min-width: 700px) {
-  /* line 967, ../scss/style.scss */
+  /* line 828, ../scss/style.scss */
   footer .social-nav {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
   }
 }
-/* line 976, ../scss/style.scss */
+/* line 837, ../scss/style.scss */
 footer .social-nav li {
   margin-right: .5em;
 }
 @media screen and (min-width: 600px) {
-  /* line 980, ../scss/style.scss */
+  /* line 841, ../scss/style.scss */
   footer .social-nav a {
     height: 51px;
     width: 50px;
     background-size: 252px;
   }
-  /* line 986, ../scss/style.scss */
+  /* line 847, ../scss/style.scss */
   footer .social-nav a.facebook {
     background-position: 0;
   }
-  /* line 990, ../scss/style.scss */
+  /* line 851, ../scss/style.scss */
   footer .social-nav a.twitter {
     background-position: -51px 0;
   }
-  /* line 994, ../scss/style.scss */
+  /* line 855, ../scss/style.scss */
   footer .social-nav a.instagram {
     background-position: -101px 0;
   }
-  /* line 998, ../scss/style.scss */
+  /* line 859, ../scss/style.scss */
   footer .social-nav a.email {
     background-position: -152px 0;
   }
 }
 
-/* line 1008, ../scss/style.scss */
+/* line 869, ../scss/style.scss */
 .icons ul {
   padding: 4em 2em;
   text-align: center;
 }
 @media screen and (min-width: 1230px) {
-  /* line 1008, ../scss/style.scss */
+  /* line 869, ../scss/style.scss */
   .icons ul {
     display: -webkit-box;
     display: -moz-box;
@@ -1101,7 +993,7 @@ footer .social-nav li {
     align-items: stretch;
   }
 }
-/* line 1043, ../scss/style.scss */
+/* line 904, ../scss/style.scss */
 .icons ul li {
   margin: 0 1%;
   /* -webkit-order: 0;
@@ -1117,7 +1009,7 @@ footer .social-nav li {
   align-self: center; */
 }
 @media screen and (min-width: 500px) {
-  /* line 1043, ../scss/style.scss */
+  /* line 904, ../scss/style.scss */
   .icons ul li {
     width: 47%;
     display: inline-block;
@@ -1125,19 +1017,19 @@ footer .social-nav li {
   }
 }
 @media screen and (min-width: 675px) {
-  /* line 1043, ../scss/style.scss */
+  /* line 904, ../scss/style.scss */
   .icons ul li {
     width: 31%;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 1043, ../scss/style.scss */
+  /* line 904, ../scss/style.scss */
   .icons ul li {
     width: 22%;
   }
 }
 @media screen and (min-width: 1230px) {
-  /* line 1043, ../scss/style.scss */
+  /* line 904, ../scss/style.scss */
   .icons ul li {
     width: inherit;
     -webkit-order: 0;
@@ -1153,14 +1045,14 @@ footer .social-nav li {
     align-self: center;
   }
 }
-/* line 1075, ../scss/style.scss */
+/* line 936, ../scss/style.scss */
 .icons ul li:last-of-type {
   margin: 0 auto;
   width: 209px;
   display: block;
 }
 @media screen and (min-width: 900px) {
-  /* line 1075, ../scss/style.scss */
+  /* line 936, ../scss/style.scss */
   .icons ul li:last-of-type {
     margin: 0 1%;
     width: 22%;
@@ -1168,60 +1060,60 @@ footer .social-nav li {
   }
 }
 @media screen and (min-width: 1230px) {
-  /* line 1075, ../scss/style.scss */
+  /* line 936, ../scss/style.scss */
   .icons ul li:last-of-type {
     width: inherit;
   }
 }
-/* line 1104, ../scss/style.scss */
+/* line 965, ../scss/style.scss */
 .icons ul a {
   display: block;
   text-indent: -9999px;
   background: url("../img/badges-sprite.png") no-repeat;
   margin: 0 auto 3em;
 }
-/* line 1110, ../scss/style.scss */
+/* line 971, ../scss/style.scss */
 .icons ul a.cards {
   height: 177px;
   width: 177px;
 }
-/* line 1115, ../scss/style.scss */
+/* line 976, ../scss/style.scss */
 .icons ul a.passes {
   width: 100px;
   height: 212px;
   background-position: -178px;
 }
-/* line 1121, ../scss/style.scss */
+/* line 982, ../scss/style.scss */
 .icons ul a.exclusives {
   width: 192px;
   height: 167px;
   background-position: -278px 0px;
 }
-/* line 1127, ../scss/style.scss */
+/* line 988, ../scss/style.scss */
 .icons ul a.screening {
   width: 126px;
   height: 200px;
   background-position: -470px -1px;
 }
-/* line 1133, ../scss/style.scss */
+/* line 994, ../scss/style.scss */
 .icons ul a.rentals {
   width: 112px;
   height: 209px;
   background-position: -597px;
 }
-/* line 1139, ../scss/style.scss */
+/* line 1000, ../scss/style.scss */
 .icons ul a.ads {
   width: 121px;
   height: 144px;
   background-position: -709px 0px;
 }
-/* line 1145, ../scss/style.scss */
+/* line 1006, ../scss/style.scss */
 .icons ul a.events {
   width: 156px;
   height: 156px;
   background-position: -829px 0px;
 }
-/* line 1154, ../scss/style.scss */
+/* line 1015, ../scss/style.scss */
 .icons::before, .icons::after {
   content: "";
   display: block;
@@ -1229,7 +1121,7 @@ footer .social-nav li {
   height: 3px;
   background: url("../img/border.jpg") repeat;
 }
-/* line 1162, ../scss/style.scss */
+/* line 1023, ../scss/style.scss */
 .icons::after {
   background-position: 50%;
 }
