@@ -137,7 +137,8 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 1em;
-    line-height: 1.3em
+    line-height: 1.3em;
+    font-weight: 700;
 }
 
 p {
@@ -258,6 +259,7 @@ header
 		    display: block;
 		    transition: 0.3s;
 		    text-transform: uppercase;
+			font-weight: 700;
 		}
 
 		@include breakpoint($end-small) {
@@ -301,22 +303,35 @@ About
     p {
 	    font-size: 1.7em;
 	    line-height: 22px;
+	    font-weight: 300;
 
 	    	@include breakpoint($end-small) {
-	    		font-size: 2.2em;
-	    		line-height: 1.3em;
+	    		font-size: 2.4em;
+	    		line-height: 1.6em;
 	    	}
 	}
 
-	.fine-print p {
+	.manager {
+		text-transform: uppercase;
+		padding-bottom: 0;
+		line-height: inherit;
+		font-weight: 700;
+	}
+
+	.fine-print {
+		margin-top: 3em;
+
+		p {
 		font-size: 1.4em;
 	    line-height: 17px;
 	    padding-bottom: .25em;
+	    font-family: 'Quicksand', sans-serif;
 
 	    	@include breakpoint($end-small) {
-	    		font-size: 1.6em;
+	    		font-size: 1.5em;
 	    		line-height: 1.25em;
 	    	}
+	    }
 	}
 }
 
@@ -430,6 +445,9 @@ About
     }
 }
 
+.date {
+	font-family: 'Quicksand', sans-serif;
+}
 
 /* =================================================================
 Images
@@ -438,22 +456,48 @@ Images
 .image1 {
 	background: url('../img/1baxter-exterior.jpg') no-repeat;
 	background-size: cover;
-	padding-top: 30%;
-	background-attachment: fixed;
+	padding-top: 66%;
+
+		@include breakpoint($end-small) {
+			background-attachment: fixed;
+			padding-top: 55%;
+		}
+
+		@include breakpoint($end-medium) {
+			padding-top: 30%;
+		}
 }
 
 .image2 {
 	background: url('../img/bolshoi.jpg') no-repeat;
-	background-size: cover;
-	padding-top: 30%;
-	background-attachment: fixed;
+	background-size: contain;
+	padding-top: 66.4%;
+
+		@include breakpoint($end-small) {
+			background-size: cover;
+			padding-top: 55%;
+			background-attachment: fixed;
+		}
+
+		@include breakpoint($end-medium) {
+			padding-top: 30%;
+		}
+
 }
 
 .image3 {
 	background: url('../img/theatre.jpg') no-repeat;
 	background-size: cover;
-	padding-top: 30%;
-	background-attachment: fixed;
+	padding-top: 66%;
+
+		@include breakpoint($end-small) {
+			padding-top: 55%;
+			background-attachment: fixed;
+		}
+
+		@include breakpoint($end-medium) {
+			padding-top: 30%;
+		}
 }
 
 
@@ -654,6 +698,7 @@ Now Showing and Coming Soon
 	a:hover img {
 		opacity: .4;
 	}
+
 }
 
 /* =================================================================
