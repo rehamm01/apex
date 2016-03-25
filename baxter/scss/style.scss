@@ -509,6 +509,7 @@ Images
     	padding-top: 50%;
     	background-attachment: scroll;
     	background-size: 100%;
+    	background-position: center;
   	}
 }
 
@@ -523,6 +524,52 @@ Images
     	padding-top: 50%;
     	background-attachment: scroll;
     	background-size: 100%;
+    	background-position: center;
+  	}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  	.image1,
+  	.image2,
+  	.image3 {
+  		background-size: cover;
+    	padding-top: 50%;
+    	background-attachment: scroll;
+    	background-size: 100%;
+    	background-position: center;
+  	}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	.image1,
+  	.image2,
+  	.image3 {
+  		background-size: cover;
+    	padding-top: 50%;
+    	background-attachment: scroll;
+    	background-size: 100%;
+    	background-position: center;
+  	}
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+  	.image1,
+  	.image2,
+  	.image3 {
+  		background-size: cover;
+    	padding-top: 50%;
+    	background-attachment: scroll;
+    	background-size: 100%;
+    	background-position: center;
   	}
 }
 
