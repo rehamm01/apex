@@ -22,4 +22,7 @@ Must implement a JavaScript Framework. [AngularJS to load separate HTML files fo
 Must have code on GitHub in a repository no later than Friday, March 25, 2016 at noon
 
 
+Concerns: Any advice on how best to optimize this site for quicker loading times would be appreciated.
+
+
 UI Developer: Rebecca Hammer
