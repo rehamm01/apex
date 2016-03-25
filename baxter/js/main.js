@@ -17,7 +17,7 @@
 		s.destroy();
 	}
 
-	enquire.register("screen and (min-width: 600px)", {
+	enquire.register("screen and (min-width: 800px)", {
 	    match : function() {
 	        enableSkrollr();
 	    },  

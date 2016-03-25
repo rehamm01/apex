@@ -479,9 +479,6 @@ Images
 .image1 {
   background: url("../img/1baxter-exterior.jpg") no-repeat;
   background-size: cover;
-  webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   padding-top: 66%;
 }
 @media screen and (min-width: 600px) {
@@ -498,42 +495,42 @@ Images
   }
 }
 
-/* line 472, ../scss/style.scss */
+/* line 469, ../scss/style.scss */
 .image2 {
   background: url("../img/bolshoi.jpg") no-repeat;
   background-size: contain;
   padding-top: 66.4%;
 }
 @media screen and (min-width: 600px) {
-  /* line 472, ../scss/style.scss */
+  /* line 469, ../scss/style.scss */
   .image2 {
     background-size: cover;
     padding-top: 55%;
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 472, ../scss/style.scss */
+  /* line 469, ../scss/style.scss */
   .image2 {
     padding-top: 30%;
   }
 }
 
-/* line 489, ../scss/style.scss */
+/* line 486, ../scss/style.scss */
 .image3 {
   background: url("../img/theatre.jpg") no-repeat;
   background-size: cover;
   padding-top: 66%;
 }
 @media screen and (min-width: 600px) {
-  /* line 489, ../scss/style.scss */
+  /* line 486, ../scss/style.scss */
   .image3 {
     padding-top: 55%;
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 489, ../scss/style.scss */
+  /* line 486, ../scss/style.scss */
   .image3 {
     padding-top: 30%;
   }
@@ -542,7 +539,7 @@ Images
 /* =================================================================
 Buttons
 ================================================================= */
-/* line 509, ../scss/style.scss */
+/* line 506, ../scss/style.scss */
 .btn {
   background: none;
   cursor: pointer;
@@ -564,7 +561,7 @@ Buttons
   text-align: center;
   width: 255px;
 }
-/* line 530, ../scss/style.scss */
+/* line 527, ../scss/style.scss */
 .btn:after {
   content: '';
   position: absolute;
@@ -574,11 +571,11 @@ Buttons
   transition: all 0.3s;
 }
 
-/* line 540, ../scss/style.scss */
+/* line 537, ../scss/style.scss */
 .btn-fx {
   overflow: hidden;
 }
-/* line 543, ../scss/style.scss */
+/* line 540, ../scss/style.scss */
 .btn-fx:after {
   width: 0;
   height: 103%;
@@ -591,23 +588,23 @@ Buttons
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 557, ../scss/style.scss */
+/* line 554, ../scss/style.scss */
 .btn-fx:hover, .btn-fx:active {
   color: #310d43;
 }
-/* line 561, ../scss/style.scss */
+/* line 558, ../scss/style.scss */
 .btn-fx:hover:after {
   width: 90%;
   opacity: 1;
   z-index: -1;
 }
 
-/* line 568, ../scss/style.scss */
+/* line 565, ../scss/style.scss */
 .secondary-button {
   position: relative;
   z-index: 100;
 }
-/* line 572, ../scss/style.scss */
+/* line 569, ../scss/style.scss */
 .secondary-button a {
   font-size: 25px;
   text-transform: uppercase;
@@ -624,17 +621,17 @@ Buttons
   border: 2px solid #c0acd1;
   text-align: center;
 }
-/* line 582, ../scss/style.scss */
+/* line 579, ../scss/style.scss */
 .secondary-button .btn-fx:after {
   background-color: #c0acd1;
 }
-/* line 587, ../scss/style.scss */
+/* line 584, ../scss/style.scss */
 .secondary-button .btn-fx:hover,
 .secondary-button .btn-fx:active {
   color: #000;
 }
 
-/* line 593, ../scss/style.scss */
+/* line 590, ../scss/style.scss */
 .button-container {
   margin: 4em auto;
   display: block;
@@ -648,21 +645,21 @@ Buttons
   width: 100%;
 }
 
-/* line 601, ../scss/style.scss */
+/* line 598, ../scss/style.scss */
 .app,
 .google {
   text-align: center;
   margin: 1em;
   display: block;
 }
-/* line 606, ../scss/style.scss */
+/* line 603, ../scss/style.scss */
 .app img,
 .google img {
   width: 135px;
   margin: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 606, ../scss/style.scss */
+  /* line 603, ../scss/style.scss */
   .app img,
   .google img {
     width: 157px;
@@ -670,14 +667,14 @@ Buttons
 }
 
 @media screen and (min-width: 600px) {
-  /* line 616, ../scss/style.scss */
+  /* line 613, ../scss/style.scss */
   .app {
     float: left;
   }
 }
 
 @media screen and (min-width: 600px) {
-  /* line 622, ../scss/style.scss */
+  /* line 619, ../scss/style.scss */
   .google {
     float: right;
   }
@@ -686,14 +683,14 @@ Buttons
 /* =================================================================
 Now Showing and Coming Soon
 ================================================================= */
-/* line 632, ../scss/style.scss */
+/* line 629, ../scss/style.scss */
 #now-showing,
 #coming-soon {
   max-width: 900px;
   margin: 0 auto;
 }
 @media screen and (min-width: 600px) {
-  /* line 636, ../scss/style.scss */
+  /* line 633, ../scss/style.scss */
   #now-showing ul,
   #coming-soon ul {
     display: -webkit-box;
@@ -729,13 +726,13 @@ Now Showing and Coming Soon
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 636, ../scss/style.scss */
+  /* line 633, ../scss/style.scss */
   #now-showing ul,
   #coming-soon ul {
     width: 100%;
   }
 }
-/* line 675, ../scss/style.scss */
+/* line 672, ../scss/style.scss */
 #now-showing li,
 #coming-soon li {
   width: 188px;
@@ -744,7 +741,7 @@ Now Showing and Coming Soon
   margin: 0 auto 2em;
 }
 @media screen and (min-width: 600px) {
-  /* line 675, ../scss/style.scss */
+  /* line 672, ../scss/style.scss */
   #now-showing li,
   #coming-soon li {
     -webkit-box-ordinal-group: 1;
@@ -763,7 +760,7 @@ Now Showing and Coming Soon
     margin: 0 1% 2.5em;
   }
 }
-/* line 699, ../scss/style.scss */
+/* line 696, ../scss/style.scss */
 #now-showing a:hover img,
 #coming-soon a:hover img {
   opacity: .4;
@@ -772,7 +769,7 @@ Now Showing and Coming Soon
 /* =================================================================
 Map
 ================================================================= */
-/* line 709, ../scss/style.scss */
+/* line 706, ../scss/style.scss */
 #map {
   height: 50%;
   color: #000;
@@ -781,24 +778,24 @@ Map
   margin: 8em 6%;
 }
 @media screen and (min-width: 800px) {
-  /* line 709, ../scss/style.scss */
+  /* line 706, ../scss/style.scss */
   #map {
     height: 75%;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 709, ../scss/style.scss */
+  /* line 706, ../scss/style.scss */
   #map {
     max-width: 840px;
     margin: 8em auto;
   }
 }
-/* line 725, ../scss/style.scss */
+/* line 722, ../scss/style.scss */
 #map strong {
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 730, ../scss/style.scss */
+/* line 727, ../scss/style.scss */
 #map a {
   font-weight: bold;
   text-decoration: underline;
@@ -809,25 +806,25 @@ Map
 Footer
 ================================================================= */
 @media screen and (min-width: 700px) {
-  /* line 741, ../scss/style.scss */
+  /* line 738, ../scss/style.scss */
   footer {
     padding: 2em;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 741, ../scss/style.scss */
+  /* line 738, ../scss/style.scss */
   footer {
     padding: 6em 2em 4em;
   }
 }
-/* line 750, ../scss/style.scss */
+/* line 747, ../scss/style.scss */
 footer p {
   font-size: 1.2em;
   text-transform: uppercase;
   text-align: center;
   padding: 2em 1em;
 }
-/* line 757, ../scss/style.scss */
+/* line 754, ../scss/style.scss */
 footer .sister-logo {
   text-indent: -99999px;
   display: block;
@@ -837,66 +834,66 @@ footer .sister-logo {
   background: url("../img/village-link.png") no-repeat;
 }
 @media screen and (min-width: 950px) {
-  /* line 757, ../scss/style.scss */
+  /* line 754, ../scss/style.scss */
   footer .sister-logo {
     float: right;
     margin: 0;
   }
 }
-/* line 771, ../scss/style.scss */
+/* line 768, ../scss/style.scss */
 footer .copyright {
   padding-bottom: 2em;
   clear: left;
 }
 @media screen and (min-width: 700px) {
-  /* line 771, ../scss/style.scss */
+  /* line 768, ../scss/style.scss */
   footer .copyright {
     text-align: center;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 771, ../scss/style.scss */
+  /* line 768, ../scss/style.scss */
   footer .copyright {
     text-align: left;
     float: left;
   }
 }
-/* line 784, ../scss/style.scss */
+/* line 781, ../scss/style.scss */
 footer .copyright p {
   padding: 0 1em;
 }
 @media screen and (min-width: 700px) {
-  /* line 784, ../scss/style.scss */
+  /* line 781, ../scss/style.scss */
   footer .copyright p {
     display: inline-block;
     padding: 0;
   }
-  /* line 791, ../scss/style.scss */
+  /* line 788, ../scss/style.scss */
   footer .copyright p::after {
     content: "•";
     margin: 0 1em;
   }
-  /* line 796, ../scss/style.scss */
+  /* line 793, ../scss/style.scss */
   footer .copyright p:last-of-type::after {
     content: none;
     margin: 0;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 806, ../scss/style.scss */
+  /* line 803, ../scss/style.scss */
   footer .link-buttons {
     margin: 0 auto 2em;
     width: 595px;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 806, ../scss/style.scss */
+  /* line 803, ../scss/style.scss */
   footer .link-buttons {
     float: left;
     margin: 0 auto 1em;
   }
 }
-/* line 818, ../scss/style.scss */
+/* line 815, ../scss/style.scss */
 footer .app-buttons {
   margin: 4em auto;
   max-width: 354px;
@@ -909,61 +906,61 @@ footer .app-buttons:after {
   width: 100%;
 }
 @media screen and (min-width: 700px) {
-  /* line 818, ../scss/style.scss */
+  /* line 815, ../scss/style.scss */
   footer .app-buttons {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
   }
 }
-/* line 830, ../scss/style.scss */
+/* line 827, ../scss/style.scss */
 footer .social-nav {
   margin: 4em auto;
 }
 @media screen and (min-width: 700px) {
-  /* line 830, ../scss/style.scss */
+  /* line 827, ../scss/style.scss */
   footer .social-nav {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
   }
 }
-/* line 839, ../scss/style.scss */
+/* line 836, ../scss/style.scss */
 footer .social-nav li {
   margin-right: .5em;
 }
 @media screen and (min-width: 600px) {
-  /* line 843, ../scss/style.scss */
+  /* line 840, ../scss/style.scss */
   footer .social-nav a {
     height: 51px;
     width: 50px;
     background-size: 252px;
   }
-  /* line 849, ../scss/style.scss */
+  /* line 846, ../scss/style.scss */
   footer .social-nav a.facebook {
     background-position: 0;
   }
-  /* line 853, ../scss/style.scss */
+  /* line 850, ../scss/style.scss */
   footer .social-nav a.twitter {
     background-position: -51px 0;
   }
-  /* line 857, ../scss/style.scss */
+  /* line 854, ../scss/style.scss */
   footer .social-nav a.instagram {
     background-position: -101px 0;
   }
-  /* line 861, ../scss/style.scss */
+  /* line 858, ../scss/style.scss */
   footer .social-nav a.email {
     background-position: -152px 0;
   }
 }
 
-/* line 871, ../scss/style.scss */
+/* line 868, ../scss/style.scss */
 .icons ul {
   padding: 4em 2em;
   text-align: center;
 }
 @media screen and (min-width: 1230px) {
-  /* line 871, ../scss/style.scss */
+  /* line 868, ../scss/style.scss */
   .icons ul {
     display: -webkit-box;
     display: -moz-box;
@@ -995,7 +992,7 @@ footer .social-nav li {
     align-items: stretch;
   }
 }
-/* line 906, ../scss/style.scss */
+/* line 903, ../scss/style.scss */
 .icons ul li {
   margin: 0 1%;
   /* -webkit-order: 0;
@@ -1011,7 +1008,7 @@ footer .social-nav li {
   align-self: center; */
 }
 @media screen and (min-width: 500px) {
-  /* line 906, ../scss/style.scss */
+  /* line 903, ../scss/style.scss */
   .icons ul li {
     width: 47%;
     display: inline-block;
@@ -1019,19 +1016,19 @@ footer .social-nav li {
   }
 }
 @media screen and (min-width: 675px) {
-  /* line 906, ../scss/style.scss */
+  /* line 903, ../scss/style.scss */
   .icons ul li {
     width: 31%;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 906, ../scss/style.scss */
+  /* line 903, ../scss/style.scss */
   .icons ul li {
     width: 22%;
   }
 }
 @media screen and (min-width: 1230px) {
-  /* line 906, ../scss/style.scss */
+  /* line 903, ../scss/style.scss */
   .icons ul li {
     width: inherit;
     -webkit-order: 0;
@@ -1047,14 +1044,14 @@ footer .social-nav li {
     align-self: center;
   }
 }
-/* line 938, ../scss/style.scss */
+/* line 935, ../scss/style.scss */
 .icons ul li:last-of-type {
   margin: 0 auto;
   width: 209px;
   display: block;
 }
 @media screen and (min-width: 900px) {
-  /* line 938, ../scss/style.scss */
+  /* line 935, ../scss/style.scss */
   .icons ul li:last-of-type {
     margin: 0 1%;
     width: 22%;
@@ -1062,60 +1059,60 @@ footer .social-nav li {
   }
 }
 @media screen and (min-width: 1230px) {
-  /* line 938, ../scss/style.scss */
+  /* line 935, ../scss/style.scss */
   .icons ul li:last-of-type {
     width: inherit;
   }
 }
-/* line 967, ../scss/style.scss */
+/* line 964, ../scss/style.scss */
 .icons ul a {
   display: block;
   text-indent: -9999px;
   background: url("../img/badges-sprite.png") no-repeat;
   margin: 0 auto 3em;
 }
-/* line 973, ../scss/style.scss */
+/* line 970, ../scss/style.scss */
 .icons ul a.cards {
   height: 177px;
   width: 177px;
 }
-/* line 978, ../scss/style.scss */
+/* line 975, ../scss/style.scss */
 .icons ul a.passes {
   width: 100px;
   height: 212px;
   background-position: -178px;
 }
-/* line 984, ../scss/style.scss */
+/* line 981, ../scss/style.scss */
 .icons ul a.exclusives {
   width: 192px;
   height: 167px;
   background-position: -278px 0px;
 }
-/* line 990, ../scss/style.scss */
+/* line 987, ../scss/style.scss */
 .icons ul a.screening {
   width: 126px;
   height: 200px;
   background-position: -470px -1px;
 }
-/* line 996, ../scss/style.scss */
+/* line 993, ../scss/style.scss */
 .icons ul a.rentals {
   width: 112px;
   height: 209px;
   background-position: -597px;
 }
-/* line 1002, ../scss/style.scss */
+/* line 999, ../scss/style.scss */
 .icons ul a.ads {
   width: 121px;
   height: 144px;
   background-position: -709px 0px;
 }
-/* line 1008, ../scss/style.scss */
+/* line 1005, ../scss/style.scss */
 .icons ul a.events {
   width: 156px;
   height: 156px;
   background-position: -829px 0px;
 }
-/* line 1017, ../scss/style.scss */
+/* line 1014, ../scss/style.scss */
 .icons::before, .icons::after {
   content: "";
   display: block;
@@ -1123,7 +1120,7 @@ footer .social-nav li {
   height: 3px;
   background: url("../img/border.jpg") repeat;
 }
-/* line 1025, ../scss/style.scss */
+/* line 1022, ../scss/style.scss */
 .icons::after {
   background-position: 50%;
 }

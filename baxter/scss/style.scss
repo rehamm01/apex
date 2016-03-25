@@ -454,9 +454,6 @@ Images
 .image1 {
 	background: url('../img/1baxter-exterior.jpg') no-repeat;
 	background-size: cover;
-	webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	padding-top: 66%;
 
 		@include breakpoint($end-small) {
@@ -477,7 +474,7 @@ Images
 		@include breakpoint($end-small) {
 			background-size: cover;
 			padding-top: 55%;
-			background-attachment: scroll;
+			background-attachment: fixed;
 		}
 
 		@include breakpoint($end-medium) {
@@ -493,7 +490,7 @@ Images
 
 		@include breakpoint($end-small) {
 			padding-top: 55%;
-			background-attachment: scroll;
+			background-attachment: fixed;
 		}
 
 		@include breakpoint($end-medium) {
