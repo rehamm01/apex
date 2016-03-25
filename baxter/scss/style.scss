@@ -173,6 +173,7 @@ section {
     text-transform: uppercase;
     margin: 0 .5em;
     display: inline-block;
+    font-weight: 700;
 }
 
 .date {
@@ -230,7 +231,7 @@ header
     text-indent: -99999px;
     z-index: 100;
 
-    	@include breakpoint($end-small) {
+    	@include breakpoint(1100px) {
     		display: none;
     	}
 }
@@ -260,7 +261,7 @@ header
 			font-weight: 700;
 		}
 
-		@include breakpoint($end-small) {
+		@include breakpoint(1100px) {
 			height: inherit;
 			display: block;
 		    padding: 1.75em 1em;
