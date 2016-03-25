@@ -4,7 +4,10 @@ Website redesign for Apex Theaters, a company consisting of two movie theaters i
 
 Project consists of a website for Baxter Avenue Theatres Filmworks. The existing content has been streamlined and made responsive for multiple device sizes.
 
-Next Steps: Will create a landing page with an option to navigate to either a Baxter Avenue Homepage or a Village 8 Homepage. A website for Village 8 Theaters will also be developed.
+Next Steps: 
+I will create a landing page with an option to navigate to either a Baxter Avenue Homepage or a Village 8 Homepage so that the company can have a starting point. I will also create a website for Village 8 Theaters that will follow the design of the Baxter Avenue site.
+
+To complete the Baxter Avenue Homepage, I will create separate information pages for each of the "badges" above the footer. 
 
 
 Requirements for Code Louisville:

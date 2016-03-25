@@ -197,8 +197,8 @@ header
 @media screen and (min-width: 600px) {
   /* line 199, ../scss/style.scss */
   .header-image {
-    padding-top: 0;
-    height: 100vh;
+    padding-top: 5vh;
+    height: 95vh;
     display: table;
     width: 100%;
   }
@@ -254,7 +254,7 @@ header
 }
 /* line 259, ../scss/style.scss */
 .navsect a {
-  padding: 3% 0;
+  padding: 2.5vh 0;
   text-decoration: none;
   font-size: 2em;
   color: #fff;
