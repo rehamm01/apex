@@ -836,6 +836,17 @@ footer {
 
 		li {
 			margin-right: .5em;
+
+			&:first-of-type {
+
+				@include breakpoint($end-small) {
+					margin-left: 3em;
+				}
+
+				@include breakpoint(700px) {
+					margin-left: 0;
+				}
+			}
 		}
 
 		a {
