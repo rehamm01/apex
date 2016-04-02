@@ -198,7 +198,7 @@ header
   /* line 199, ../scss/style.scss */
   .header-image {
     padding-top: 5vh;
-    height: 95vh;
+    height: 100vh;
     display: table;
     width: 100%;
   }
