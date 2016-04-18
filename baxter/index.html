@@ -194,6 +194,7 @@
 </script>
 
 <script>// To apply 35px offset to #anchor tag links
+if($(window).width() >= 1099){
 // The function actually applying the offset
 	function offsetAnchor() {
 	    if(location.hash.length !== 0) {
@@ -210,6 +211,7 @@
 	window.setTimeout(function() {
     	offsetAnchor();
 	}, 1);
+}
 </script>
 
 
