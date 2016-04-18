@@ -29,7 +29,6 @@
 		<div class="navsect hide1">
 			<a href="#tickets">Tickets</a>
 		    <a href="#now-showing">Now Showing</a>
-		    <a href="#coming-soon">Coming Soon</a>
 		    <a href="#exclusives">Exclusives</a>
 		    <a href="#map">Location</a>
 		</div>
@@ -65,7 +64,7 @@
 		</div>
 
 		<ul class="social-nav">
-			<li><a class="facebook" href="https://www.facebook.com/Baxter-Avenue-Theaters-Filmworks-OFFICIAL-199866953417149/?fref=ts">Facebook</a></li>
+			<li><a class="facebook" href="https://www.facebook.com/Village-8-Theaters-111967469505/">Facebook</a></li>
 			<li><a class="twitter" href="https://twitter.com/apexfilmworks">Twitter</a></li>
 			<li><a class="instagram" href="/">Instagram</a></li>
 			<li><a class="email" href="mailto:info@apextheatres.com">Email</a></li>
@@ -128,11 +127,11 @@
 
 	<footer>
 		<div class="wrapper2">
-			<a href="/" class="sister-logo">Visit our sister location: Village 8 Theatres</a>
+			<a href="http://rehamm01.github.io/apex/baxter/index.html" class="sister-logo">Visit our sister location: Baxter Avenue Theatres Filmworks</a>
 
 			<div class="link-buttons">
 				<ul class="social-nav">
-					<li><a class="facebook" href="https://www.facebook.com/Baxter-Avenue-Theaters-Filmworks-OFFICIAL-199866953417149/?fref=ts">Facebook</a></li>
+					<li><a class="facebook" href="https://www.facebook.com/Village-8-Theaters-111967469505/">Facebook</a></li>
 					<li><a class="twitter" href="https://twitter.com/apexfilmworks">Twitter</a></li>
 					<li><a class="instagram" href="/">Instagram</a></li>
 					<li><a class="email" href="mailto:info@apextheatres.com">Email</a></li>
@@ -197,7 +196,7 @@ if($(window).width() >= 1099){
 
   function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 38.234988, lng: -85.717734},
+      center: {lat: 38.2329405, lng: -85.6352804},
       zoom: 16
     });
 
@@ -205,7 +204,7 @@ if($(window).width() >= 1099){
     var service = new google.maps.places.PlacesService(map);
 
     service.getDetails({ 
-      placeId: 'ChIJy6uAZNIMaYgR76bVMjQZLJ8'
+      placeId: 'ChIJk3sTmtIKaYgRSWgT7eh6_8o'
     }, function(place, status) {
       if (status === google.maps.places.PlacesServiceStatus.OK) {
         var marker = new google.maps.Marker({
@@ -214,7 +213,7 @@ if($(window).width() >= 1099){
         });
         google.maps.event.addListener(marker, 'click', function() {
           infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-            place.formatted_address + '<br><a href="https://www.google.com/maps/place/Baxter+Avenue+Theatres/@38.23476,-85.7199017,17z/data=!3m1!4b1!4m2!3m1!1s0x88690cd26480abcb:0x9f2c193432d5a6ef">Open in Google Maps</a></div>');
+            place.formatted_address + '<br><a href="https://www.google.com/maps/place/Village+8+Theatres/@38.2329405,-85.6352804,17z/data=!4m7!1m4!3m3!1s0x88690ad29a137b93:0xcaff7ae8ed136849!2sVillage+8+Theatres!3b1!3m1!1s0x88690ad29a137b93:0xcaff7ae8ed136849">Open in Google Maps</a></div>');
           infowindow.open(map, this);
         });
       }
@@ -223,7 +222,7 @@ if($(window).width() >= 1099){
 </script>
 
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2NbzdrA22scWPse1vebR2F3mZxyiNsYY&libraries=places&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu1I_SSG1mawsHd1GJodr-XhAN82W9js&libraries=places&callback=initMap">
 </script>
 
 <script type="text/javascript" src="js/enquire.min.js"></script>
