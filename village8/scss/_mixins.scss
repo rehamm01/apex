@@ -1,0 +1,16 @@
+@mixin filter($params...) {
+	-webkit-filter: $params;
+	filter: $params;
+}
+
+@mixin breakpoint($break) {
+	@media screen and (min-width:$break) {
+		@content;
+	}
+}
+
+@mixin linear-gradient($fallback, $direction, $colorstops...) {
+	background: linear-gradient($direction, $colorstops...);
+	background-color: $fallback;
+}
+

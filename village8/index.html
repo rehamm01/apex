@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+	<title>Welcome to Village 8 Theatres</title>
+	<link rel='shortcut icon' href='img/baxter-favicon.ico' type='image/x-icon'/ >
+	
+	<link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/device-breakpoints.css">
+
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-animate.js"></script>
+	<script src="js/script.js"></script>
+	
+</head>
+
+<body id="village">
+
+	<header> 
+
+		<div class="menu"></div>
+		<div class="navsect hide1">
+			<a href="#tickets">Tickets</a>
+		    <a href="#now-showing">Now Showing</a>
+		    <a href="#coming-soon">Coming Soon</a>
+		    <a href="#exclusives">Exclusives</a>
+		    <a href="#map">Location</a>
+		</div>
+
+		<div class="header-image">
+			<h1 data-top="opacity: 1" data--300-top="opacity: 0">
+				<img src="img/logo.png" alt="Logo for Village 8 Theatres"> Village 8 Theatres
+			</h1>
+		</div>
+	</header>
+
+	<div id="intro" class="wrapper">
+		<p>A landmark of St. Matthews in Dupont Village, Village 8 continues to be Louisville's only “discount house” operating at full schedule seven days a week, three-hundred sixty-five days a year. Village 8 has also hosted a number of special events including the Jewish Film Festival, Asian Film Series and the International 48 Hour Film Festival.</p>
+
+		<p class="manager">Matthew Kohorst</p>
+		<p>General Manager</p>
+
+		<p class="manager">NOW HIRING - ALL POSITIONS</p>
+
+		<div class="fine-print">
+			<p>Private showings for 125 or more guests are set up through the home office at <a class="mobile-only" href="tel:1-502-458-2994">(502) 458-2994</a></p>
+			<p>Private showings for groups of less than 50 people are set up through Village 8 Management at <a class="mobile-only" href="tel:1-502-894-8697">(502) 894-8697</a></p>
+			<p>For the safety of our patrons, the management asks that all backpacks or large tote bags be stowed in the box office.</p>
+			<p>Shirts and shoes are required for patrons.</p>
+			<p>No outside food or drink is permitted inside the theatres.</p>
+			<p>No cameras or recording devices are permitted inside the theatres.</p>
+		</div>
+
+		<div class="button-container">
+			<a class="app" href="https://itunes.apple.com/app/apex-theatres/id563273944?mt=8"><img src="img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download our app on the App Store"></a>
+
+			<a class="google" href="https://play.google.com/store/apps/details?id=com.interactivemedialab.apex.theatres&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5pbnRlcmFjdGl2ZW1lZGlhbGFiLmFwZXgudGhlYXRyZXMiXQ"><img src="img/google-play-badge.png" alt="Download our app on Google Play"></a>
+		</div>
+
+		<ul class="social-nav">
+			<li><a class="facebook" href="https://www.facebook.com/Baxter-Avenue-Theaters-Filmworks-OFFICIAL-199866953417149/?fref=ts">Facebook</a></li>
+			<li><a class="twitter" href="https://twitter.com/apexfilmworks">Twitter</a></li>
+			<li><a class="instagram" href="/">Instagram</a></li>
+			<li><a class="email" href="mailto:info@apextheatres.com">Email</a></li>
+			<li><a class="phone mobile" href="tel:1-502-456-4404">Phone</a></li>
+		</ul>
+	</div>
+
+	<div id="tickets" class="gradient">
+		<h2>
+			<a class="btn btn-fx" href="http://37.formovietickets.com:2235/">Buy Tickets</a>
+		</h2>
+	</div>
+
+	<section id="now-showing">
+		<div ng-app="MyModuleA">
+		    <div ng-controller="NowShowing">
+		        <div ng-include="template.url"></div>
+		    </div>
+		</div>
+	</section>
+
+	<!-- <section id="coming-soon">
+		<div ng-app="MyModuleB">
+		    <div ng-controller="ComingSoon">
+		        <div ng-include="template.url"></div>
+		    </div>
+	    </div>
+	</section> -->
+
+	<div class="image1" alt="Exterior shot of Vilage 8 Theatres at night" data-bottom-top="background-position: 0% 0%" data-top-bottom="background-position: 30% -50%"></div>
+
+	<section id="exclusives" class="gradient">
+		<h3>Louisville Exclusives at Village 8</h3>
+
+		<p><span class="title"><a href="https://www.youtube.com/watch?v=5dSDOlC-MoM">Mr. Right</a></span> <span class="date">Now Showing</span></p>
+		<p><span class="title"><a href="https://www.youtube.com/watch?v=HDBBmxGe82s">Colonia</a></span> <span class="date">Opens Friday, April 15th</span></p>
+		<p><span class="title"><a href="https://www.youtube.com/watch?v=__2uT1cZWkY">City of Gold</a></span> <span class="date">Opens Friday, April 15th</span></p>
+		<p><span class="title"><a href="https://www.youtube.com/watch?v=dACtVZJH7nA">The Adderall Diaries</a></span> <span class="date">Opens Friday, April 22nd</span></p>
+		<p><span class="title"><a href="https://www.youtube.com/watch?v=utn3AuutXVk">April and the Extraordinary World</a></span> <span class="date">Opens Friday, April 29th</span></p>
+		<p><span class="title"><a href="https://www.youtube.com/watch?v=PmSJXqDh3nI">Mothers and Daughters</a></span> <span class="date">Opens Friday, May 6th</span></p>
+
+
+		<div class="secondary-button"><a href="http://37.formovietickets.com:2235/" class="btn btn-fx">Buy Tickets</a></div>
+	</section>
+
+	<div id="map"><div class="wrapper"></div></div>
+
+	<div class="icons gradient">
+		<div class="wrapper2">
+			<ul>
+				<li><a href="" class="cards">Gift Cards</a></li>
+				<li><a href="" class="rentals">Theater Rentals</a></li>
+				<li><a href="" class="events">Special Events</a></li>
+				<li><a href="" class="exclusives">Louisville Exclusives Club</a></li>
+				<li><a href="" class="ads">Onscreen Advertising</a></li>
+				<li><a href="" class="passes">Guest Passes</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		<div class="wrapper2">
+			<a href="/" class="sister-logo">Visit our sister location: Village 8 Theatres</a>
+
+			<div class="link-buttons">
+				<ul class="social-nav">
+					<li><a class="facebook" href="https://www.facebook.com/Baxter-Avenue-Theaters-Filmworks-OFFICIAL-199866953417149/?fref=ts">Facebook</a></li>
+					<li><a class="twitter" href="https://twitter.com/apexfilmworks">Twitter</a></li>
+					<li><a class="instagram" href="/">Instagram</a></li>
+					<li><a class="email" href="mailto:info@apextheatres.com">Email</a></li>
+					<li><a class="phone mobile" href="tel:1-502-456-4404">Phone</a></li>
+				</ul>
+
+				<div class="app-buttons">
+					<a class="app" href="https://itunes.apple.com/app/apex-theatres/id563273944?mt=8"><img src="img/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download our app on the App Store"></a>
+					<a class="google" href="https://play.google.com/store/apps/details?id=com.interactivemedialab.apex.theatres&feature=search_result#?t=W251bGwsMSwyLDEsImNvbS5pbnRlcmFjdGl2ZW1lZGlhbGFiLmFwZXgudGhlYXRyZXMiXQ"><img src="img/google-play-badge.png" alt="Download our app on Google Play"></a>
+				</div>
+			</div>
+
+			<div class="copyright">
+				<p>&copy;2016 Apex Entertainment, LLC</p>
+				<p>1250 Bardstown Road</p>
+				<p>Louisville, KY  40204</p>
+				<p>(502) 458-2994</p>
+			</div>
+
+		</div>
+	</footer>
+
+
+<script> // Open and Close mobile menu
+	$(document).ready(function () {
+		$( ".menu" ).click(function() {
+			$( ".navsect" ).toggleClass( "hide1" );
+			$( this ).toggleClass( "close" );
+			$('.navsect a').on('click', function(){
+			    $('.menu').trigger('click');
+			});
+		});
+	});
+</script>
+
+<script>// To apply 35px offset to #anchor tag links
+if($(window).width() >= 1099){
+// The function actually applying the offset
+	function offsetAnchor() {
+	    if(location.hash.length !== 0) {
+	        window.scrollTo(window.scrollX, window.scrollY - 35);
+	    }
+	}
+// This will capture hash changes while on the page
+	$(window).on("hashchange", function () {
+	    offsetAnchor();
+	});
+// This is here so that when you enter the page with a hash,
+// it can provide the offset in that case too. Having a timeout
+// seems necessary to allow the browser to jump to the anchor first.
+	window.setTimeout(function() {
+    	offsetAnchor();
+	}, 1);
+}
+</script>
+
+
+<script>
+  // This example requires the Places library. Include the libraries=places
+  // parameter when you first load the API. For example:
+  // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 38.234988, lng: -85.717734},
+      zoom: 16
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+    var service = new google.maps.places.PlacesService(map);
+
+    service.getDetails({ 
+      placeId: 'ChIJy6uAZNIMaYgR76bVMjQZLJ8'
+    }, function(place, status) {
+      if (status === google.maps.places.PlacesServiceStatus.OK) {
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+            place.formatted_address + '<br><a href="https://www.google.com/maps/place/Baxter+Avenue+Theatres/@38.23476,-85.7199017,17z/data=!3m1!4b1!4m2!3m1!1s0x88690cd26480abcb:0x9f2c193432d5a6ef">Open in Google Maps</a></div>');
+          infowindow.open(map, this);
+        });
+      }
+    });
+  }
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2NbzdrA22scWPse1vebR2F3mZxyiNsYY&libraries=places&callback=initMap">
+</script>
+
+<script type="text/javascript" src="js/enquire.min.js"></script>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
