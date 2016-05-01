@@ -326,20 +326,21 @@ Promotions
 /* line 319, ../scss/style.scss */
 #promotions .secondary-button .btn-fx:hover,
 #promotions .secondary-button .btn-fx:active {
-  color: #000;
+  color: #21052e;
+  background-color: #fff;
 }
-/* line 324, ../scss/style.scss */
+/* line 325, ../scss/style.scss */
 #promotions .links-back {
   width: 140px;
   margin: 2em auto;
 }
 @media screen and (min-width: 400px) {
-  /* line 324, ../scss/style.scss */
+  /* line 325, ../scss/style.scss */
   #promotions .links-back {
     width: 325px;
   }
 }
-/* line 333, ../scss/style.scss */
+/* line 334, ../scss/style.scss */
 #promotions .baxter-back {
   text-indent: -99999px;
   display: inline-block;
@@ -350,7 +351,7 @@ Promotions
   margin-right: 2em;
   vertical-align: middle;
 }
-/* line 344, ../scss/style.scss */
+/* line 345, ../scss/style.scss */
 #promotions .village-back {
   text-indent: -99999px;
   display: inline-block;
@@ -361,7 +362,7 @@ Promotions
   margin-left: 2em;
   vertical-align: middle;
 }
-/* line 355, ../scss/style.scss */
+/* line 356, ../scss/style.scss */
 #promotions li {
   text-align: center;
   font-size: 1.4em;

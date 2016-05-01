@@ -291,7 +291,7 @@ Promotions
 	.gradient {
 		@include gradient;
 	}
-
+ 
 	a {
 		text-decoration: underline;
 	}
@@ -317,7 +317,8 @@ Promotions
 
 		.btn-fx:hover, 
 		.btn-fx:active {
-		    color: #000;
+		    color: $dark-gradient;
+		    background-color: #fff;
 		}
 	}
 
