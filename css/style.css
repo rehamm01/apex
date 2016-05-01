@@ -348,10 +348,17 @@ Promotions
   background-size: contain;
   width: 140px;
   height: 158px;
-  margin-right: 2em;
+  margin-bottom: 2em;
   vertical-align: middle;
 }
-/* line 345, ../scss/style.scss */
+@media screen and (min-width: 400px) {
+  /* line 334, ../scss/style.scss */
+  #promotions .baxter-back {
+    margin-right: 2em;
+    margin-bottom: 0;
+  }
+}
+/* line 350, ../scss/style.scss */
 #promotions .village-back {
   text-indent: -99999px;
   display: inline-block;
@@ -359,10 +366,17 @@ Promotions
   background-size: contain;
   width: 140px;
   height: 141px;
-  margin-left: 2em;
+  margin-bottom: 2em;
   vertical-align: middle;
 }
-/* line 356, ../scss/style.scss */
+@media screen and (min-width: 400px) {
+  /* line 350, ../scss/style.scss */
+  #promotions .village-back {
+    margin-right: 2em;
+    margin-bottom: 0;
+  }
+}
+/* line 366, ../scss/style.scss */
 #promotions li {
   text-align: center;
   font-size: 1.4em;

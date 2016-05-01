@@ -338,8 +338,13 @@ Promotions
 	    background-size: contain;
 	    width: 140px;
 	    height: 158px;
-	    margin-right: 2em;
+	    margin-bottom: 2em;
 	    vertical-align: middle;
+
+	    	@include breakpoint(400px) {
+	    		margin-right: 2em;
+	    		margin-bottom: 0;
+	    	}
 	}
 
 	.village-back {
@@ -349,8 +354,13 @@ Promotions
 	    background-size: contain;
 	    width: 140px;
 	    height: 141px;
-	    margin-left: 2em;
+	    margin-bottom: 2em;
 	    vertical-align: middle;
+
+	    	@include breakpoint(400px) {
+	    		margin-right: 2em;
+	    		margin-bottom: 0;
+	    	}
 	}
 
 	li {
