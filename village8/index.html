@@ -17,7 +17,6 @@
 	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-animate.js"></script>
-	<script src="js/script.js"></script>
 	
 </head>
 
@@ -30,7 +29,7 @@
 			<a href="http://rehamm01.github.io/apex/village8/index.html#tickets">Tickets</a>
 		    <a href="http://rehamm01.github.io/apex/village8/index.html#now-showing">Now Showing</a>
 		    <a href="http://rehamm01.github.io/apex/village8/index.html#exclusives">Exclusives</a>
-		    <a href="http://rehamm01.github.io/apex/village8/index.html#map">Location</a>
+		    <a href="http://rehamm01.github.io/apex/village8/index.htmls#map">Location</a>
 		</div>
 
 		<div class="header-image">
@@ -79,19 +78,70 @@
 	</div>
 
 	<section id="now-showing">
-		<div ng-app="MyModuleA">
-		    <div ng-controller="NowShowing">
-		        <div ng-include="template.url"></div>
-		    </div>
-		</div>
+		<h3>Now Showing</h3>
+
+		<!-- Save all poster images as 188px wide by 262px tall -->
+
+		<ul>
+			<li>
+				<a href="https://www.youtube.com/watch?v=__2uT1cZWkY">   <!-- Link to YouTube preview goes in the href="" quotes. Try to find an official trailer on the production company's YouTube channel -->
+					<img src="img/posters/city-of-gold.jpg" alt="poster for the food critic documentary City of Gold">   <!-- Update the new image name in the src="" quotes and provide a description of the image in the alt="" quotes. -->
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=HDBBmxGe82s">
+					<img src="img/posters/colonia.jpg" alt="poster for Colonia">
+				</a>
+			</li>  
+			<li>
+				<a href="https://www.youtube.com/watch?v=hyzQjVUmIxk">
+					<img src="img/posters/eddie-the-eagle.jpg" alt="poster for Eddie the Eagle">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=tuVg_6UaQsU">
+					<img src="img/posters/gods-of-egypt.jpg" alt="poster for the movie Gods of Egypt">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=10r9ozshGVE">
+					<img src="img/posters/kungfu-panda.jpg" alt="poster for the animated film Kung Fu Panda 3">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=LoebZZ8K5N0">
+					<img src="img/posters/the-revenant.jpg" alt="poster for Academy Award winning film The Revenant">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=WgnrwwiIDlI">
+					<img src="img/posters/spotlight.jpg" alt="poster for the Academy Award winning film Spotlight">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=sGbxmsDFVnE">
+					<img src="img/posters/starwars.jpg" alt="poster for Star Wars: The Force Awakens">
+				</a>
+			</li>
+			<li>
+				<a href="https://www.youtube.com/watch?v=6DE4bI4zrUs">
+					<img src="img/posters/whiskey-tango-foxtrot.jpg" alt="poster for the comedy Whiskey Tango Foxtrot">
+				</a>
+			</li>
+
+		</ul>
 	</section>
 
 	<!-- <section id="coming-soon">
-		<div ng-app="MyModuleB">
-		    <div ng-controller="ComingSoon">
-		        <div ng-include="template.url"></div>
-		    </div>
-	    </div>
+		<h3>Coming Soon</h3>
+
+		<ul>
+			<li>
+				<a href="https://www.youtube.com/watch?v=NhWg7AQLI_8">
+					<img src="img/posters/batman-v-superman.jpg" alt="poster for Batman v Superman">
+				</a>
+			</li>  
+		</ul>
 	</section> -->
 
 	<div class="image1" alt="Exterior shot of Vilage 8 Theatres at night" data-bottom-top="background-position: 0% 0%" data-top-bottom="background-position: 30% -50%"></div>
