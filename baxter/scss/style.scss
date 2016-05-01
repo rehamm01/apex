@@ -1,9 +1,10 @@
 /*
+* BAXTER AVENUE
 * Author:   Rebecca Hammer <rehamm01@gmail.com>
 * Creation: February 2016
 *
 */
-
+ 
 @import "mixins";
 
 /* =================================================================
@@ -442,7 +443,7 @@ About
 }
 
 #tickets {
-    padding: 2em;
+    padding: 3.5em;
 
     h2 {
     	position: relative;
@@ -609,10 +610,12 @@ Buttons
 
     img {
     	width: 135px;
+    	height: 40px;
     	margin: 0;
 
     		@include breakpoint($end-small) {
     			width: 157px;
+    			height: 46.52px;
     		}
     }
 }
