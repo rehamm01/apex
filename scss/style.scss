@@ -1,0 +1,368 @@
+/*
+* Author:   Rebecca Hammer <rehamm01@gmail.com>
+* Creation: February 2016
+*
+*/
+
+@import "mixins";
+
+/* =================================================================
+variables
+================================================================= */
+$end-small: 600px;
+$end-medium: 800px;
+$max-width: 1200px;
+
+$light-gradient: #310d43;
+$dark-gradient: #21052e;
+$light-button: #c0acd1;
+$dark-button: #9270aa;
+
+/* =================================================================
+mixins
+================================================================= */
+@mixin clearfix {
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+        width: 100%;
+    }
+}
+
+@mixin button {
+	font-size: 25px;
+    text-transform: uppercase;
+    padding: .75em .75em .6em;
+    border: 1px solid #fff;
+    width: 195px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+@mixin gradient {
+    background: #401157;
+    background: -moz-linear-gradient(top, #401157 0%, #21062e 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #401157), color-stop(100%, #21062e));
+    background: -webkit-linear-gradient(top, #401157 0%, #21062e 100%);
+    background: -o-linear-gradient(top, #401157 0%, #21062e 100%);
+    background: -ms-linear-gradient(top, #401157 0%, #21062e 100%);
+    background: linear-gradient(to bottom, #401157 0%, #21062e 100%);
+}
+
+/* =================================================================
+reset
+================================================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+		display: block;
+}
+
+ol, ul {
+		list-style: none;
+}
+
+blockquote, q {
+		quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+		content: '';
+		content: none;
+}
+
+table {
+		border-collapse: collapse;
+		border-spacing: 0;
+}
+
+*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+
+/* =================================================================
+basic
+================================================================= */
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 62.5%;
+}
+
+h1 {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 0;
+
+		@include breakpoint($end-small) {
+			display: table-cell;
+    		vertical-align: middle;
+		}
+}
+
+h3 {
+	font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    line-height: 1.3em;
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 1.8em;
+    line-height: 2em;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.wrapper {
+	@include clearfix;
+	max-width: 900px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.wrapper2 {
+	@include clearfix;
+	max-width: 1350px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+/* =================================================================
+Profiles
+================================================================= */
+
+#profiles {
+	background-image: url("../img/background.jpg");
+    padding: 5vh 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+
+    	@include breakpoint($end-small) {
+    		height: 100vh;
+    	}
+
+    &:before {
+    	display: block;
+	    content: '';
+	    margin: 0 auto;
+	    background: url("../img/apex-logo.png") no-repeat;
+	    background-size: contain;
+	    width: 75px;
+	    height: 251px;
+
+	    	@include breakpoint($end-small) {
+	    		background-size: cover;
+			    padding-top: 47%;
+			    margin: 4% 43%;
+			    width: 14%;
+	    	}
+
+	    	@include breakpoint(1050px) {
+	    		width: 147px;
+			    height: 493.5px;
+			    margin: 5vh auto;
+			    padding-top: 0;
+	    	}
+    }
+
+    a {
+		text-transform: uppercase;
+	    font-size: 2em;
+	    padding: .5em .3em .3em;
+	    border: 1px solid white;
+	    display: block;
+	    margin: 1em;
+	    text-align: center;
+
+	    	@include breakpoint($end-small) {
+	    		border: 0;
+	    		text-indent: -99999px;
+	    	}
+
+	    .baxter & {
+	    		@include breakpoint($end-small) {
+	    			width: 25%;
+				    margin: 0 14% 0 11%;
+				    background: url(../img/baxter-logo.png) no-repeat;
+				    padding-top: 25%;
+				    background-size: contain;
+				    display: inline-block;
+			        max-width: 300px;
+				    position: absolute;
+				    top: 29.5%;
+				    left: 0;
+	    		}
+	    }
+
+	    .village & {
+	    	letter-spacing: 3.5px;
+
+	    		@include breakpoint($end-small) {
+	    			width: 25%;
+				    margin: 0 11% 0 14%;
+				    background: url(../img/village-logo.png) no-repeat;
+				    padding-top: 25%;
+				    background-size: contain;
+				    display: inline-block;
+					max-width: 300px;
+				    position: absolute;
+				    top: 32%;
+				    right: 0%;
+	    		}
+	    }
+	}
+
+}
+
+
+/* =================================================================
+Promotions
+================================================================= */
+
+#promotions {
+	font-family: 'Quicksand', sans-serif;
+
+	section {
+	    padding: 8em 2em;
+	}
+
+	.fine-print {
+		margin-top: 3em;
+		font-size: 1.4em;
+	    line-height: 17px;
+	    padding-bottom: .25em;
+	    font-family: 'Quicksand', sans-serif;
+		max-width: 700px;
+    	margin: 0 auto;
+
+	    	@include breakpoint($end-small) {
+	    		font-size: 1.5em;
+	    		line-height: 1.25em;
+	    	}
+	}
+
+	.gradient {
+		@include gradient;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	.secondary-button {
+		position: relative;
+		z-index: 100;
+
+		a {
+			@include button;
+			color: #fff;
+			font-size: 18px;
+		    margin: 1em auto 2em;
+		    width: 195px;
+		    border: 2px solid #fff;
+		    text-align: center;
+		    text-decoration: none !important;
+		}
+
+		.btn-fx:after {
+			background-color: #c0acd1;
+		}
+
+		.btn-fx:hover, 
+		.btn-fx:active {
+		    color: #000;
+		}
+	}
+
+	.links-back {
+		width: 140px;
+		margin: 2em auto;
+
+			@include breakpoint(400px) {
+				width: 325px;
+			}
+	}
+
+	.baxter-back {
+		text-indent: -99999px;
+	    display: inline-block;
+	    background: url("../img/baxter-logo.png") no-repeat;
+	    background-size: contain;
+	    width: 140px;
+	    height: 158px;
+	    margin-right: 2em;
+	    vertical-align: middle;
+	}
+
+	.village-back {
+		text-indent: -99999px;
+	    display: inline-block;
+	    background: url("../img/village-logo.png") no-repeat;
+	    background-size: contain;
+	    width: 140px;
+	    height: 141px;
+	    margin-left: 2em;
+	    vertical-align: middle;
+	}
+
+	li {
+	    text-align: center;
+	    font-size: 1.4em;
+	}
+}
+
+
+
+
+
+
+
+
+

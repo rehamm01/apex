@@ -1,0 +1,368 @@
+/*
+* Author:   Rebecca Hammer <rehamm01@gmail.com>
+* Creation: February 2016
+*
+*/
+/* =================================================================
+variables
+================================================================= */
+/* =================================================================
+mixins
+================================================================= */
+/* =================================================================
+reset
+================================================================= */
+/* line 69, ../scss/style.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 80, ../scss/style.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 84, ../scss/style.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 88, ../scss/style.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 93, ../scss/style.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 98, ../scss/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 103, ../scss/style.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* =================================================================
+basic
+================================================================= */
+/* line 114, ../scss/style.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 120, ../scss/style.scss */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+/* line 127, ../scss/style.scss */
+h1 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+}
+@media screen and (min-width: 600px) {
+  /* line 127, ../scss/style.scss */
+  h1 {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+/* line 139, ../scss/style.scss */
+h3 {
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  line-height: 1.3em;
+  font-weight: 700;
+}
+
+/* line 148, ../scss/style.scss */
+p {
+  text-align: center;
+  padding-bottom: 1em;
+  font-size: 1.8em;
+  line-height: 2em;
+}
+
+/* line 155, ../scss/style.scss */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 160, ../scss/style.scss */
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 25, ../scss/style.scss */
+.wrapper:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+/* line 167, ../scss/style.scss */
+.wrapper2 {
+  max-width: 1350px;
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 25, ../scss/style.scss */
+.wrapper2:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+/* =================================================================
+Profiles
+================================================================= */
+/* line 179, ../scss/style.scss */
+#profiles {
+  background-image: url("../img/background.jpg");
+  padding: 5vh 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+@media screen and (min-width: 600px) {
+  /* line 179, ../scss/style.scss */
+  #profiles {
+    height: 100vh;
+  }
+}
+/* line 191, ../scss/style.scss */
+#profiles:before {
+  display: block;
+  content: '';
+  margin: 0 auto;
+  background: url("../img/apex-logo.png") no-repeat;
+  background-size: contain;
+  width: 75px;
+  height: 251px;
+}
+@media screen and (min-width: 600px) {
+  /* line 191, ../scss/style.scss */
+  #profiles:before {
+    background-size: cover;
+    padding-top: 47%;
+    margin: 4% 43%;
+    width: 14%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  /* line 191, ../scss/style.scss */
+  #profiles:before {
+    width: 147px;
+    height: 493.5px;
+    margin: 5vh auto;
+    padding-top: 0;
+  }
+}
+/* line 215, ../scss/style.scss */
+#profiles a {
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: .5em .3em .3em;
+  border: 1px solid white;
+  display: block;
+  margin: 1em;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  /* line 215, ../scss/style.scss */
+  #profiles a {
+    border: 0;
+    text-indent: -99999px;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* line 229, ../scss/style.scss */
+  .baxter #profiles a {
+    width: 25%;
+    margin: 0 14% 0 11%;
+    background: url(../img/baxter-logo.png) no-repeat;
+    padding-top: 25%;
+    background-size: contain;
+    display: inline-block;
+    max-width: 300px;
+    position: absolute;
+    top: 29.5%;
+    left: 0;
+  }
+}
+/* line 244, ../scss/style.scss */
+.village #profiles a {
+  letter-spacing: 3.5px;
+}
+@media screen and (min-width: 600px) {
+  /* line 244, ../scss/style.scss */
+  .village #profiles a {
+    width: 25%;
+    margin: 0 11% 0 14%;
+    background: url(../img/village-logo.png) no-repeat;
+    padding-top: 25%;
+    background-size: contain;
+    display: inline-block;
+    max-width: 300px;
+    position: absolute;
+    top: 32%;
+    right: 0%;
+  }
+}
+
+/* =================================================================
+Promotions
+================================================================= */
+/* line 269, ../scss/style.scss */
+#promotions {
+  font-family: 'Quicksand', sans-serif;
+}
+/* line 272, ../scss/style.scss */
+#promotions section {
+  padding: 8em 2em;
+}
+/* line 276, ../scss/style.scss */
+#promotions .fine-print {
+  margin-top: 3em;
+  font-size: 1.4em;
+  line-height: 17px;
+  padding-bottom: .25em;
+  font-family: 'Quicksand', sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 600px) {
+  /* line 276, ../scss/style.scss */
+  #promotions .fine-print {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+}
+/* line 291, ../scss/style.scss */
+#promotions .gradient {
+  background: #401157;
+  background: -moz-linear-gradient(top, #401157 0%, #21062e 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #401157), color-stop(100%, #21062e));
+  background: -webkit-linear-gradient(top, #401157 0%, #21062e 100%);
+  background: -o-linear-gradient(top, #401157 0%, #21062e 100%);
+  background: -ms-linear-gradient(top, #401157 0%, #21062e 100%);
+  background: linear-gradient(to bottom, #401157 0%, #21062e 100%);
+}
+/* line 295, ../scss/style.scss */
+#promotions a {
+  text-decoration: underline;
+}
+/* line 299, ../scss/style.scss */
+#promotions .secondary-button {
+  position: relative;
+  z-index: 100;
+}
+/* line 303, ../scss/style.scss */
+#promotions .secondary-button a {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: .75em .75em .6em;
+  border: 1px solid #fff;
+  width: 195px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  margin: 1em auto 2em;
+  width: 195px;
+  border: 2px solid #fff;
+  text-align: center;
+  text-decoration: none !important;
+}
+/* line 314, ../scss/style.scss */
+#promotions .secondary-button .btn-fx:after {
+  background-color: #c0acd1;
+}
+/* line 319, ../scss/style.scss */
+#promotions .secondary-button .btn-fx:hover,
+#promotions .secondary-button .btn-fx:active {
+  color: #000;
+}
+/* line 324, ../scss/style.scss */
+#promotions .links-back {
+  width: 140px;
+  margin: 2em auto;
+}
+@media screen and (min-width: 400px) {
+  /* line 324, ../scss/style.scss */
+  #promotions .links-back {
+    width: 325px;
+  }
+}
+/* line 333, ../scss/style.scss */
+#promotions .baxter-back {
+  text-indent: -99999px;
+  display: inline-block;
+  background: url("../img/baxter-logo.png") no-repeat;
+  background-size: contain;
+  width: 140px;
+  height: 158px;
+  margin-right: 2em;
+  vertical-align: middle;
+}
+/* line 344, ../scss/style.scss */
+#promotions .village-back {
+  text-indent: -99999px;
+  display: inline-block;
+  background: url("../img/village-logo.png") no-repeat;
+  background-size: contain;
+  width: 140px;
+  height: 141px;
+  margin-left: 2em;
+  vertical-align: middle;
+}
+/* line 355, ../scss/style.scss */
+#promotions li {
+  text-align: center;
+  font-size: 1.4em;
+}
