@@ -220,8 +220,8 @@ Profiles
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 229, ../scss/style.scss */
-  .baxter #profiles a {
+  /* line 230, ../scss/style.scss */
+  #profiles .baxter a {
     width: 25%;
     margin: 0 14% 0 11%;
     background: url(../img/baxter-logo.png) no-repeat;
@@ -234,13 +234,13 @@ Profiles
     left: 0;
   }
 }
-/* line 244, ../scss/style.scss */
-.village #profiles a {
+/* line 245, ../scss/style.scss */
+#profiles .village a {
   letter-spacing: 3.5px;
 }
 @media screen and (min-width: 600px) {
-  /* line 244, ../scss/style.scss */
-  .village #profiles a {
+  /* line 245, ../scss/style.scss */
+  #profiles .village a {
     width: 25%;
     margin: 0 11% 0 14%;
     background: url(../img/village-logo.png) no-repeat;

@@ -225,39 +225,39 @@ Profiles
 	    		border: 0;
 	    		text-indent: -99999px;
 	    	}
-
-	    .baxter & {
-	    		@include breakpoint($end-small) {
-	    			width: 25%;
-				    margin: 0 14% 0 11%;
-				    background: url(../img/baxter-logo.png) no-repeat;
-				    padding-top: 25%;
-				    background-size: contain;
-				    display: inline-block;
-			        max-width: 300px;
-				    position: absolute;
-				    top: 29.5%;
-				    left: 0;
-	    		}
-	    }
-
-	    .village & {
-	    	letter-spacing: 3.5px;
-
-	    		@include breakpoint($end-small) {
-	    			width: 25%;
-				    margin: 0 11% 0 14%;
-				    background: url(../img/village-logo.png) no-repeat;
-				    padding-top: 25%;
-				    background-size: contain;
-				    display: inline-block;
-					max-width: 300px;
-				    position: absolute;
-				    top: 32%;
-				    right: 0%;
-	    		}
-	    }
 	}
+
+	.baxter a {
+    		@include breakpoint($end-small) {
+    			width: 25%;
+			    margin: 0 14% 0 11%;
+			    background: url(../img/baxter-logo.png) no-repeat;
+			    padding-top: 25%;
+			    background-size: contain;
+			    display: inline-block;
+		        max-width: 300px;
+			    position: absolute;
+			    top: 29.5%;
+			    left: 0;
+    		}
+	    }
+
+    .village a {
+    	letter-spacing: 3.5px;
+
+    		@include breakpoint($end-small) {
+    			width: 25%;
+			    margin: 0 11% 0 14%;
+			    background: url(../img/village-logo.png) no-repeat;
+			    padding-top: 25%;
+			    background-size: contain;
+			    display: inline-block;
+				max-width: 300px;
+			    position: absolute;
+			    top: 32%;
+			    right: 0%;
+    		}
+    }
 
 }
 
