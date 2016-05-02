@@ -15,9 +15,6 @@
 	<link rel="stylesheet" href="css/device-breakpoints.css">
 
 	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-animate.js"></script>
-	<script src="js/script.js"></script>
 	
 </head> 
 
@@ -27,14 +24,14 @@
 
 		<div class="menu"></div>
 		<div class="navsect hide1">
-			<a href="http://rehamm01.github.io/apex/baxter/index.html#tickets">Tickets</a>
-		    <a href="http://rehamm01.github.io/apex/baxter/index.html#now-showing">Now Showing</a>
-		    <a href="http://rehamm01.github.io/apex/baxter/index.html#coming-soon">Coming Soon</a>
-		    <a href="http://rehamm01.github.io/apex/baxter/index.html#exclusives">Exclusives</a>
-		    <a href="http://rehamm01.github.io/apex/baxter/index.html#bolshoi">Bolshoi Ballet</a>
-		    <a href="http://rehamm01.github.io/apex/baxter/index.html#nat-theater">National Theatre</a>
-		    <a href="http://rehamm01.github.io/apex/baxter/index.html#midnights">Midnights at the Baxter</a>
-		    <a href="http://rehamm01.github.io/apex/baxter/index.html#map">Location</a>
+			<a href="#tickets">Tickets</a>
+		    <a href="#now-showing">Now Showing</a>
+		    <a href="#coming-soon">Coming Soon</a>
+		    <a href="#exclusives">Exclusives</a>
+		    <a href="#bolshoi">Bolshoi Ballet</a>
+		    <a href="#nat-theater">National Theatre</a>
+		    <a href="#midnights">Midnights at the Baxter</a>
+		    <a href="#map">Location</a>
 		</div>
 
 		<div class="header-image">
@@ -91,15 +88,6 @@
 		<!-- Save all poster images as 188px wide by 262px tall -->
 
 		<ul>  
-			<li>
-				<a href="https://www.youtube.com/watch?v=43NWzay3W4s&index=15&list=PLK5HARgNfgj-cuVJ8e3XrMRFtl-JE0uiQ">  <!-- Link to YouTube preview goes in the href="" quotes. Try to find an official trailer on the production company's YouTube channel -->
-					<img src="img/posters/captain-america-civil-war.jpg" alt="poster for the superhero action movie Captain America: Civil War">  <!-- Update the new image name in the src="" quotes and provide a description of the image in the alt="" quotes. -->
-				</a>
-				<p>Captain America: Civil War</p>
-				<p>7:00 PM</p> <!-- Include * for any times NOT playing on Thursday -->
-				<p>8:00 PM</p>
-				<p>9:45 PM</p>
-			</li>
 			<li>
 				<a href="https://www.youtube.com/watch?v=is_KQCt1OdY">
 					<img src="img/posters/papa-hemingway-in-cuba.jpg" alt="poster for the true-life story Papa Hemingway in Cuba">
@@ -186,18 +174,22 @@
 		</ul>
 	</section>
 
-	<!-- <section id="coming-soon">
+	<section id="coming-soon">
 		<h3>Coming Soon</h3>
+
+		<div class="explanation">
+			<p>Click on the posters below to view Theatrical Trailers for upcoming releases.</p>
+		</div>
 
 		<ul>
 			<li>
-				<a href="https://www.youtube.com/watch?v=hXeWrmt_QmY"> 
-					<img src="img/posters/the-empire-of-corpses.jpg" alt="poster for the anime film The Empire of Corpses"> 
+				<a href="https://www.youtube.com/watch?v=43NWzay3W4s&index=15&list=PLK5HARgNfgj-cuVJ8e3XrMRFtl-JE0uiQ">  <!-- Link to YouTube preview goes in the href="" quotes. Try to find an official trailer on the production company's YouTube channel -->
+					<img src="img/posters/captain-america-civil-war.jpg" alt="poster for the superhero action movie Captain America: Civil War">  <!-- Update the new image name in the src="" quotes and provide a description of the image in the alt="" quotes. -->
 				</a>
+				<p>Opening Thursday May 5th</p>
 			</li>
-
 		</ul>
-	</section> -->
+	</section>
 
 	<div class="image1" alt="Exterior shot of Baxter Avenue Theatres Filmworks at night" data-bottom-top="background-position: 0% 0%" data-top-bottom="background-position: 30% -50%"></div>
 
@@ -264,9 +256,21 @@
 	<section id="midnights" class="gradient">
 		<h3>Midnights at the Baxter</h3>
 
-		<p><span class="title">Run Lola Run</span> <span class="date">Saturday, April 16, 2016 at 11:55pm</span></p>
+		<p><span class="title">Fear &amp; Loathing in Las Vegas</span> <span class="date">Saturday, June 4, 2016 at 11:55pm</span></p>
+
+		<p><span class="title">The Searchers</span> <span class="date">Saturday, June 18, 2016 at 11:55pm</span></p>
+
+		<p><span class="title">Easy Rider</span> <span class="date">Saturday, July 2, 2016 at 11:55pm</span></p>
+
+		<p><span class="title">From Dusk 'Til Dawn</span> <span class="date">Saturday, July 16, 2016 at 11:55pm</span></p>
+
+		<p><span class="title">Mad Max 2: Road Warrior</span> <span class="date">Saturday, July 30, 2016 at 11:55pm</span></p>
+
+		<p><span class="title">Lawrence of Arabia</span> <span class="date">Saturday, August 6, 2016 at 11:55pm</span></p>
 
 		<div class="secondary-button"><a href="https://37.formovietickets.com:2235/" class="btn btn-fx">Buy Tickets</a></div>
+
+		<p class="fine-print">Tickets available for purchase online two weeks prior to broadcast</p>
 	</section>
 
 	<div id="map"><div class="wrapper"></div></div>
@@ -360,6 +364,7 @@ if($(window).width() >= 1099){
     });
     var infowindow = new google.maps.InfoWindow();
     var service = new google.maps.places.PlacesService(map);
+
     service.getDetails({ 
       placeId: 'ChIJy6uAZNIMaYgR76bVMjQZLJ8'
     }, function(place, status) {
