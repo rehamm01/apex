@@ -193,6 +193,16 @@ section {
 	display: none;
 }
 
+.mobile-only {
+	display: inline-block;
+	text-decoration: underline;
+
+		@include breakpoint($end-medium) {
+			cursor: none;
+			text-decoration: none;
+		}
+}
+
 
 /* =================================================================
 header
@@ -316,7 +326,7 @@ About
 	    padding-bottom: 1.4em;
 
 	    	@include breakpoint($end-small) {
-	    		font-size: 2.4em;
+	    		font-size: 2em;
 	    		line-height: 1.6em;
 	    	}
 	}
@@ -326,10 +336,10 @@ About
 		padding-bottom: 0;
 		line-height: inherit;
 		font-weight: 700;
-		font-size: 2.5em;
+		font-size: 2.3em;
 	}
 
-	.fine-print {
+	.details {
 		margin-top: 3em;
 
 		p {
@@ -738,7 +748,6 @@ Exclusives
 	font-size: 1.3em;
     font-family: 'Quicksand', sans-serif;
     line-height: 1.2em;
-    margin-top: 2.5em;
 }
 
 

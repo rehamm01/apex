@@ -192,6 +192,15 @@ section {
 	display: none;
 }
 
+.mobile-only {
+	display: inline-block;
+	text-decoration: underline;
+
+		@include breakpoint($end-medium) {
+			cursor: none;
+			text-decoration: none;
+		}
+}
 
 /* =================================================================
 header
@@ -307,7 +316,7 @@ About
     padding: 6em 3em 8em;
 
     p {
-	    font-size: 1.7em;
+	    font-size: 2em;
 	    line-height: 22px;
 	    font-weight: 300;
 
@@ -324,7 +333,7 @@ About
 		font-weight: 700;
 	}
 
-	.fine-print {
+	.details {
 		margin-top: 3em;
 
 		p {
@@ -719,6 +728,7 @@ Now Showing and Coming Soon
 
 		&:last-of-type {
 			padding-bottom: 15px;
+			margin-top: 1em;
 		}
 	}
 

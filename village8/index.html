@@ -10,13 +10,9 @@
 	<link rel='shortcut icon' href='img/baxter-favicon.ico' type='image/x-icon'/ >
 	
 	<link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/device-breakpoints.css">
-
-	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-animate.js"></script>
 	
 </head>
 
@@ -26,15 +22,15 @@
 
 		<div class="menu"></div>
 		<div class="navsect hide1">
-			<a href="http://rehamm01.github.io/apex/village8/index.html#tickets">Tickets</a>
-		    <a href="http://rehamm01.github.io/apex/village8/index.html#now-showing">Now Showing</a>
-		    <a href="http://rehamm01.github.io/apex/village8/index.html#exclusives">Exclusives</a>
-		    <a href="http://rehamm01.github.io/apex/village8/index.html#map">Location</a>
+			<a href="#tickets">Tickets</a>
+		    <a href="#now-showing">Now Showing</a>
+		    <a href="#exclusives">Exclusives</a>
+		    <a href="#map">Location</a>
 		</div>
 
 		<div class="header-image">
 			<h1 data-top="opacity: 1" data--300-top="opacity: 0">
-				<img src="img/logo.png" alt="Logo for Village 8 Theatres"> Village 8 Theatres
+				<a href="#tickets"><img src="img/logo.png" alt="Logo for Village 8 Theatres"> Village 8 Theatres</a>
 			</h1>
 		</div>
 	</header>
@@ -47,10 +43,10 @@
 
 		<p class="manager">NOW HIRING - ALL POSITIONS</p>
 
-		<div class="fine-print">
+		<div class="details">
 			<p>Private showings for 125 or more guests are set up through the home office at <a class="mobile-only" href="tel:1-502-458-2994">(502) 458-2994</a></p>
 			<p>Private showings for groups of less than 50 people are set up through Village 8 Management at <a class="mobile-only" href="tel:1-502-894-8697">(502) 894-8697</a></p>
-			<p>For the safety of our patrons, the management asks that all backpacks or large tote bags be stowed in the box office.</p>
+			<p>For the safety of our patrons, we ask that backpacks or large tote bags be stowed in the box office.</p>
 			<p>Shirts and shoes are required for patrons.</p>
 			<p>No outside food or drink is permitted inside the theatres.</p>
 			<p>No cameras or recording devices are permitted inside the theatres.</p>
@@ -252,6 +248,9 @@
 	</footer>
 
 </div>
+
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
 <script> // Open and Close mobile menu
 	$(document).ready(function () {
 		$( ".menu" ).click(function() {
@@ -264,25 +263,28 @@
 	});
 </script>
 
-<script>// To apply 35px offset to #anchor tag links
-if($(window).width() >= 1099){
-// The function actually applying the offset
-	function offsetAnchor() {
-	    if(location.hash.length !== 0) {
-	        window.scrollTo(window.scrollX, window.scrollY - 35);
-	    }
-	}
-// This will capture hash changes while on the page
-	$(window).on("hashchange", function () {
-	    offsetAnchor();
-	});
-// This is here so that when you enter the page with a hash,
-// it can provide the offset in that case too. Having a timeout
-// seems necessary to allow the browser to jump to the anchor first.
-	window.setTimeout(function() {
-    	offsetAnchor();
-	}, 1);
-}
+<script>
+	$(document).ready(function() {
+		var pageWidth = $(window).width();
+	if (pageWidth > 1099) {
+	  $('a[href^="#"]').click(function() {
+	      var target = $(this.hash);
+	      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+	      if (target.length == 0) target = $('html');
+	      $('html, body').animate({ scrollTop: target.offset().top-69 }, 500);
+	      return false;
+	  });
+	};
+});
+</script>
+
+<script>
+	$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
 </script>
 
 
