@@ -370,7 +370,13 @@ Promotions
     width: 325px;
   }
 }
-/* line 358, ../scss/style.scss */
+@media screen and (min-width: 400px) {
+  /* line 358, ../scss/style.scss */
+  #promotions #screeningroom .links-back {
+    width: 140px;
+  }
+}
+/* line 364, ../scss/style.scss */
 #promotions .baxter-back {
   text-indent: -99999px;
   display: inline-block;
@@ -382,13 +388,13 @@ Promotions
   vertical-align: middle;
 }
 @media screen and (min-width: 400px) {
-  /* line 358, ../scss/style.scss */
+  /* line 364, ../scss/style.scss */
   #promotions .baxter-back {
     margin-right: 2em;
     margin-bottom: 0;
   }
 }
-/* line 374, ../scss/style.scss */
+/* line 380, ../scss/style.scss */
 #promotions .village-back {
   text-indent: -99999px;
   display: inline-block;
@@ -400,13 +406,13 @@ Promotions
   vertical-align: middle;
 }
 @media screen and (min-width: 400px) {
-  /* line 374, ../scss/style.scss */
+  /* line 380, ../scss/style.scss */
   #promotions .village-back {
     margin-left: 2em;
     margin-bottom: 0;
   }
 }
-/* line 390, ../scss/style.scss */
+/* line 396, ../scss/style.scss */
 #promotions li {
   text-align: center;
   font-size: 1.4em;

@@ -355,6 +355,12 @@ Promotions
 			}
 	}
 
+	#screeningroom .links-back {
+		@include breakpoint(400px) {
+			width: 140px;
+		}
+	}
+
 	.baxter-back {
 		text-indent: -99999px;
 	    display: inline-block;

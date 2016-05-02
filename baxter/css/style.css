@@ -747,7 +747,6 @@ Now Showing and Coming Soon
 #now-showing li,
 #coming-soon li {
   width: 188px;
-  height: 262px;
   background-color: #310d43;
   margin: 0 auto 2em;
 }
@@ -771,16 +770,62 @@ Now Showing and Coming Soon
     margin: 0 1% 2.5em;
   }
 }
-/* line 706, ../scss/style.scss */
+/* line 705, ../scss/style.scss */
 #now-showing a:hover img,
 #coming-soon a:hover img {
   opacity: .4;
+}
+/* line 709, ../scss/style.scss */
+#now-showing p,
+#coming-soon p {
+  padding-bottom: 0;
+  line-height: 1.5;
+}
+/* line 713, ../scss/style.scss */
+#now-showing p:first-of-type,
+#coming-soon p:first-of-type {
+  padding: 15px 10px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+/* line 720, ../scss/style.scss */
+#now-showing p:last-of-type,
+#coming-soon p:last-of-type {
+  padding-bottom: 15px;
+}
+
+/* =================================================================
+Bolshoi 
+================================================================= */
+/* line 732, ../scss/style.scss */
+.explanation {
+  margin-bottom: 3em;
+}
+/* line 735, ../scss/style.scss */
+.explanation p {
+  padding-bottom: 0.45em;
+  line-height: 1.2em;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+}
+/* line 741, ../scss/style.scss */
+.explanation p:first-of-type {
+  margin-bottom: 0.75em;
+}
+
+/* line 748, ../scss/style.scss */
+.fine-print {
+  font-size: 1.3em;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.2em;
+  margin-top: 2.5em;
 }
 
 /* =================================================================
 Map
 ================================================================= */
-/* line 716, ../scss/style.scss */
+/* line 759, ../scss/style.scss */
 #map {
   height: 50%;
   color: #000;
@@ -789,24 +834,24 @@ Map
   margin: 8em 6%;
 }
 @media screen and (min-width: 800px) {
-  /* line 716, ../scss/style.scss */
+  /* line 759, ../scss/style.scss */
   #map {
     height: 75%;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 716, ../scss/style.scss */
+  /* line 759, ../scss/style.scss */
   #map {
     max-width: 840px;
     margin: 8em auto;
   }
 }
-/* line 732, ../scss/style.scss */
+/* line 775, ../scss/style.scss */
 #map strong {
   font-weight: bold;
   font-size: 1.2em;
 }
-/* line 737, ../scss/style.scss */
+/* line 780, ../scss/style.scss */
 #map a {
   font-weight: bold;
   text-decoration: underline;
@@ -817,25 +862,25 @@ Map
 Footer
 ================================================================= */
 @media screen and (min-width: 700px) {
-  /* line 748, ../scss/style.scss */
+  /* line 791, ../scss/style.scss */
   footer {
     padding: 2em;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 748, ../scss/style.scss */
+  /* line 791, ../scss/style.scss */
   footer {
     padding: 6em 2em 4em;
   }
 }
-/* line 757, ../scss/style.scss */
+/* line 800, ../scss/style.scss */
 footer p {
   font-size: 1.2em;
   text-transform: uppercase;
   text-align: center;
   padding: 2em 1em;
 }
-/* line 764, ../scss/style.scss */
+/* line 807, ../scss/style.scss */
 footer .sister-logo {
   text-indent: -99999px;
   display: block;
@@ -845,66 +890,66 @@ footer .sister-logo {
   background: url("../img/village-link.png") no-repeat;
 }
 @media screen and (min-width: 950px) {
-  /* line 764, ../scss/style.scss */
+  /* line 807, ../scss/style.scss */
   footer .sister-logo {
     float: right;
     margin: 0;
   }
 }
-/* line 778, ../scss/style.scss */
+/* line 821, ../scss/style.scss */
 footer .copyright {
   padding-bottom: 2em;
   clear: left;
 }
 @media screen and (min-width: 700px) {
-  /* line 778, ../scss/style.scss */
+  /* line 821, ../scss/style.scss */
   footer .copyright {
     text-align: center;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 778, ../scss/style.scss */
+  /* line 821, ../scss/style.scss */
   footer .copyright {
     text-align: left;
     float: left;
   }
 }
-/* line 791, ../scss/style.scss */
+/* line 834, ../scss/style.scss */
 footer .copyright p {
   padding: 0 1em;
 }
 @media screen and (min-width: 700px) {
-  /* line 791, ../scss/style.scss */
+  /* line 834, ../scss/style.scss */
   footer .copyright p {
     display: inline-block;
     padding: 0;
   }
-  /* line 798, ../scss/style.scss */
+  /* line 841, ../scss/style.scss */
   footer .copyright p::after {
     content: "•";
     margin: 0 1em;
   }
-  /* line 803, ../scss/style.scss */
+  /* line 846, ../scss/style.scss */
   footer .copyright p:last-of-type::after {
     content: none;
     margin: 0;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 813, ../scss/style.scss */
+  /* line 856, ../scss/style.scss */
   footer .link-buttons {
     margin: 0 auto 2em;
     width: 595px;
   }
 }
 @media screen and (min-width: 950px) {
-  /* line 813, ../scss/style.scss */
+  /* line 856, ../scss/style.scss */
   footer .link-buttons {
     float: left;
     margin: 0 auto 1em;
   }
 }
-/* line 825, ../scss/style.scss */
+/* line 868, ../scss/style.scss */
 footer .app-buttons {
   margin: 4em auto;
   max-width: 354px;
@@ -917,73 +962,73 @@ footer .app-buttons:after {
   width: 100%;
 }
 @media screen and (min-width: 700px) {
-  /* line 825, ../scss/style.scss */
+  /* line 868, ../scss/style.scss */
   footer .app-buttons {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
   }
 }
-/* line 837, ../scss/style.scss */
+/* line 880, ../scss/style.scss */
 footer .social-nav {
   margin: 4em auto;
 }
 @media screen and (min-width: 700px) {
-  /* line 837, ../scss/style.scss */
+  /* line 880, ../scss/style.scss */
   footer .social-nav {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
   }
 }
-/* line 846, ../scss/style.scss */
+/* line 889, ../scss/style.scss */
 footer .social-nav li {
   margin-right: .5em;
 }
 @media screen and (min-width: 600px) {
-  /* line 849, ../scss/style.scss */
+  /* line 892, ../scss/style.scss */
   footer .social-nav li:first-of-type {
     margin-left: 3em;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 849, ../scss/style.scss */
+  /* line 892, ../scss/style.scss */
   footer .social-nav li:first-of-type {
     margin-left: 0;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 861, ../scss/style.scss */
+  /* line 904, ../scss/style.scss */
   footer .social-nav a {
     height: 51px;
     width: 50px;
     background-size: 252px;
   }
-  /* line 867, ../scss/style.scss */
+  /* line 910, ../scss/style.scss */
   footer .social-nav a.facebook {
     background-position: 0;
   }
-  /* line 871, ../scss/style.scss */
+  /* line 914, ../scss/style.scss */
   footer .social-nav a.twitter {
     background-position: -51px 0;
   }
-  /* line 875, ../scss/style.scss */
+  /* line 918, ../scss/style.scss */
   footer .social-nav a.instagram {
     background-position: -101px 0;
   }
-  /* line 879, ../scss/style.scss */
+  /* line 922, ../scss/style.scss */
   footer .social-nav a.email {
     background-position: -152px 0;
   }
 }
 
-/* line 889, ../scss/style.scss */
+/* line 932, ../scss/style.scss */
 .icons ul {
   padding: 4em 2em;
   text-align: center;
 }
 @media screen and (min-width: 1230px) {
-  /* line 889, ../scss/style.scss */
+  /* line 932, ../scss/style.scss */
   .icons ul {
     display: -webkit-box;
     display: -moz-box;
@@ -1015,7 +1060,7 @@ footer .social-nav li {
     align-items: stretch;
   }
 }
-/* line 924, ../scss/style.scss */
+/* line 967, ../scss/style.scss */
 .icons ul li {
   margin: 0 1%;
   /* -webkit-order: 0;
@@ -1031,7 +1076,7 @@ footer .social-nav li {
   align-self: center; */
 }
 @media screen and (min-width: 500px) {
-  /* line 924, ../scss/style.scss */
+  /* line 967, ../scss/style.scss */
   .icons ul li {
     width: 47%;
     display: inline-block;
@@ -1039,19 +1084,19 @@ footer .social-nav li {
   }
 }
 @media screen and (min-width: 675px) {
-  /* line 924, ../scss/style.scss */
+  /* line 967, ../scss/style.scss */
   .icons ul li {
     width: 31%;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 924, ../scss/style.scss */
+  /* line 967, ../scss/style.scss */
   .icons ul li {
     width: 22%;
   }
 }
 @media screen and (min-width: 1230px) {
-  /* line 924, ../scss/style.scss */
+  /* line 967, ../scss/style.scss */
   .icons ul li {
     width: inherit;
     -webkit-order: 0;
@@ -1067,14 +1112,14 @@ footer .social-nav li {
     align-self: center;
   }
 }
-/* line 956, ../scss/style.scss */
+/* line 999, ../scss/style.scss */
 .icons ul li:last-of-type {
   margin: 0 auto;
   width: 209px;
   display: block;
 }
 @media screen and (min-width: 900px) {
-  /* line 956, ../scss/style.scss */
+  /* line 999, ../scss/style.scss */
   .icons ul li:last-of-type {
     margin: 0 1%;
     width: 22%;
@@ -1082,60 +1127,60 @@ footer .social-nav li {
   }
 }
 @media screen and (min-width: 1230px) {
-  /* line 956, ../scss/style.scss */
+  /* line 999, ../scss/style.scss */
   .icons ul li:last-of-type {
     width: inherit;
   }
 }
-/* line 985, ../scss/style.scss */
+/* line 1028, ../scss/style.scss */
 .icons ul a {
   display: block;
   text-indent: -9999px;
   background: url("../img/badges-sprite.png") no-repeat;
   margin: 0 auto 3em;
 }
-/* line 991, ../scss/style.scss */
+/* line 1034, ../scss/style.scss */
 .icons ul a.cards {
   height: 177px;
   width: 177px;
 }
-/* line 996, ../scss/style.scss */
+/* line 1039, ../scss/style.scss */
 .icons ul a.passes {
   width: 100px;
   height: 212px;
   background-position: -178px;
 }
-/* line 1002, ../scss/style.scss */
+/* line 1045, ../scss/style.scss */
 .icons ul a.exclusives {
   width: 192px;
   height: 167px;
   background-position: -278px 0px;
 }
-/* line 1008, ../scss/style.scss */
+/* line 1051, ../scss/style.scss */
 .icons ul a.screening {
   width: 126px;
   height: 200px;
   background-position: -470px -1px;
 }
-/* line 1014, ../scss/style.scss */
+/* line 1057, ../scss/style.scss */
 .icons ul a.rentals {
   width: 112px;
   height: 209px;
   background-position: -597px;
 }
-/* line 1020, ../scss/style.scss */
+/* line 1063, ../scss/style.scss */
 .icons ul a.ads {
   width: 121px;
   height: 144px;
   background-position: -709px 0px;
 }
-/* line 1026, ../scss/style.scss */
+/* line 1069, ../scss/style.scss */
 .icons ul a.events {
   width: 156px;
   height: 156px;
   background-position: -829px 0px;
 }
-/* line 1035, ../scss/style.scss */
+/* line 1078, ../scss/style.scss */
 .icons::before, .icons::after {
   content: "";
   display: block;
@@ -1143,7 +1188,7 @@ footer .social-nav li {
   height: 3px;
   background: url("../img/border.jpg") repeat;
 }
-/* line 1043, ../scss/style.scss */
+/* line 1086, ../scss/style.scss */
 .icons::after {
   background-position: 50%;
 }

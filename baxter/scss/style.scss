@@ -681,7 +681,6 @@ Now Showing and Coming Soon
 
 	li {
 		width: 188px;
-	    height: 262px;
 	    background-color: $light-gradient;
 	    margin: 0 auto 2em;
 
@@ -707,6 +706,50 @@ Now Showing and Coming Soon
 		opacity: .4;
 	}
 
+	p {
+		padding-bottom: 0;
+		line-height: 1.5;
+
+		&:first-of-type {
+			padding: 15px 10px 10px;
+    		text-transform: uppercase;
+    		font-weight: bold;
+    		line-height: 1.2em;
+		}
+
+		&:last-of-type {
+			padding-bottom: 15px;
+		}
+	}
+
+}
+
+
+/* =================================================================
+Bolshoi 
+================================================================= */
+
+.explanation {
+	margin-bottom: 3em;
+
+	p {
+		padding-bottom: 0.45em;
+		line-height: 1.2em;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 1.5em;
+
+		&:first-of-type {
+		    margin-bottom: .75em
+		}
+	}
+
+}
+
+.fine-print {
+	font-size: 1.3em;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.2em;
+    margin-top: 2.5em;
 }
 
 /* =================================================================
