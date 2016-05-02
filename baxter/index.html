@@ -361,16 +361,17 @@
 });
 </script>
 
-
 <script>
   // This example requires the Places library. Include the libraries=places
   // parameter when you first load the API. For example:
   // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
   function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 38.234988, lng: -85.717734},
       zoom: 16
     });
+
     var infowindow = new google.maps.InfoWindow();
     var service = new google.maps.places.PlacesService(map);
 
