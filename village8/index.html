@@ -203,7 +203,16 @@
 		<div class="secondary-button"><a href="https://56.formovietickets.com:2235/" class="btn btn-fx">Buy Tickets</a></div>
 	</section>
 
-	<div id="map"><div class="wrapper"></div></div>
+	<div id="map">
+		<div class="wrapper">
+			<iframe
+			  width="100%"
+			  height="450"
+			  frameborder="0" style="border:0"
+			  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCBWf6kXKFQOJ30iYO5BmpiO-XVFAWIcwE&q=Village+8+Theatres" allowfullscreen>
+			</iframe>
+		</div>
+	</div>
 
 	<div id="promo" class="icons gradient">
 		<div class="wrapper2">
@@ -285,43 +294,6 @@
     }, 500);
     return false;
 });
-</script>
-
-
-<script>
-  // This example requires the Places library. Include the libraries=places
-  // parameter when you first load the API. For example:
-  // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-
-  function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 38.2329405, lng: -85.6352804},
-      zoom: 16
-    });
-
-    var infowindow = new google.maps.InfoWindow();
-    var service = new google.maps.places.PlacesService(map);
-
-    service.getDetails({ 
-      placeId: 'ChIJk3sTmtIKaYgRSWgT7eh6_8o'
-    }, function(place, status) {
-      if (status === google.maps.places.PlacesServiceStatus.OK) {
-        var marker = new google.maps.Marker({
-          map: map,
-          position: place.geometry.location
-        });
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
-            place.formatted_address + '<br><a href="https://www.google.com/maps/place/Village+8+Theatres/@38.2329405,-85.6352804,17z/data=!4m7!1m4!3m3!1s0x88690ad29a137b93:0xcaff7ae8ed136849!2sVillage+8+Theatres!3b1!3m1!1s0x88690ad29a137b93:0xcaff7ae8ed136849">Open in Google Maps</a></div>');
-          infowindow.open(map, this);
-        });
-      }
-    });
-  }
-</script>
-
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqu1I_SSG1mawsHd1GJodr-XhAN82W9js&libraries=places&callback=initMap">
 </script>
 
 <script type="text/javascript" src="js/enquire.min.js"></script>
