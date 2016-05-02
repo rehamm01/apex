@@ -17,6 +17,7 @@
 	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.1/angular-animate.js"></script>
+	<script src="js/script.js"></script>
 	
 </head> 
 
@@ -352,16 +353,13 @@ if($(window).width() >= 1099){
   // This example requires the Places library. Include the libraries=places
   // parameter when you first load the API. For example:
   // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
-
   function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 38.234988, lng: -85.717734},
       zoom: 16
     });
-
     var infowindow = new google.maps.InfoWindow();
     var service = new google.maps.places.PlacesService(map);
-
     service.getDetails({ 
       placeId: 'ChIJy6uAZNIMaYgR76bVMjQZLJ8'
     }, function(place, status) {
