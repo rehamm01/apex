@@ -137,12 +137,26 @@ h1 {
 }
 
 h3 {
-	font-size: 2.5em;
+	font-size: 2em;
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 1em;
-    line-height: 1.3em;
-    font-weight: 700;
+    line-height: 1.1em;
+    font-weight: 600;
+    padding-top: 1em;
+    width: 90%;
+    margin: 0 5%;
+
+    	@include breakpoint($end-small) {
+    		padding-top: 2em;
+    	}
+
+    	@include breakpoint(700px) {
+    		padding-top: 1em;
+    	}
+
+    	@include breakpoint($end-medium) {
+    		padding-top: 0;
+    	}
 }
 
 p {
@@ -239,6 +253,11 @@ Profiles
 			    position: absolute;
 			    top: 29.5%;
 			    left: 0;
+
+			    &:hover {
+			    	background: url(../img/baxter-logo-hover.png) no-repeat;
+			    	background-size: contain;
+			    }
     		}
 	    }
 
@@ -256,6 +275,11 @@ Profiles
 			    position: absolute;
 			    top: 32%;
 			    right: 0%;
+
+			    &:hover {
+			    	background: url(../img/village-logo-hover.png) no-repeat;
+			    	background-size: contain;
+			    }
     		}
     }
 

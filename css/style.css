@@ -106,15 +106,35 @@ h1 {
 
 /* line 139, ../scss/style.scss */
 h3 {
-  font-size: 2.5em;
+  font-size: 2em;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 1em;
-  line-height: 1.3em;
-  font-weight: 700;
+  line-height: 1.1em;
+  font-weight: 600;
+  padding-top: 1em;
+  width: 90%;
+  margin: 0 5%;
+}
+@media screen and (min-width: 600px) {
+  /* line 139, ../scss/style.scss */
+  h3 {
+    padding-top: 2em;
+  }
+}
+@media screen and (min-width: 700px) {
+  /* line 139, ../scss/style.scss */
+  h3 {
+    padding-top: 1em;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* line 139, ../scss/style.scss */
+  h3 {
+    padding-top: 0;
+  }
 }
 
-/* line 148, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 p {
   text-align: center;
   padding-bottom: 1em;
@@ -122,13 +142,13 @@ p {
   line-height: 2em;
 }
 
-/* line 155, ../scss/style.scss */
+/* line 169, ../scss/style.scss */
 a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 160, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
@@ -142,7 +162,7 @@ a {
   width: 100%;
 }
 
-/* line 167, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 .wrapper2 {
   max-width: 1350px;
   margin: 0 auto;
@@ -159,7 +179,7 @@ a {
 /* =================================================================
 Profiles
 ================================================================= */
-/* line 179, ../scss/style.scss */
+/* line 193, ../scss/style.scss */
 #profiles {
   background-image: url("../img/background.jpg");
   padding: 5vh 0;
@@ -169,12 +189,12 @@ Profiles
   height: 100vh;
 }
 @media screen and (min-width: 600px) {
-  /* line 179, ../scss/style.scss */
+  /* line 193, ../scss/style.scss */
   #profiles {
     height: 100vh;
   }
 }
-/* line 191, ../scss/style.scss */
+/* line 205, ../scss/style.scss */
 #profiles:before {
   display: block;
   content: '';
@@ -185,7 +205,7 @@ Profiles
   height: 251px;
 }
 @media screen and (min-width: 600px) {
-  /* line 191, ../scss/style.scss */
+  /* line 205, ../scss/style.scss */
   #profiles:before {
     background-size: cover;
     padding-top: 47%;
@@ -194,7 +214,7 @@ Profiles
   }
 }
 @media screen and (min-width: 1050px) {
-  /* line 191, ../scss/style.scss */
+  /* line 205, ../scss/style.scss */
   #profiles:before {
     width: 147px;
     height: 493.5px;
@@ -202,7 +222,7 @@ Profiles
     padding-top: 0;
   }
 }
-/* line 215, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 #profiles a {
   text-transform: uppercase;
   font-size: 2em;
@@ -213,14 +233,14 @@ Profiles
   text-align: center;
 }
 @media screen and (min-width: 600px) {
-  /* line 215, ../scss/style.scss */
+  /* line 229, ../scss/style.scss */
   #profiles a {
     border: 0;
     text-indent: -99999px;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 230, ../scss/style.scss */
+  /* line 244, ../scss/style.scss */
   #profiles .baxter a {
     width: 25%;
     margin: 0 14% 0 11%;
@@ -233,13 +253,18 @@ Profiles
     top: 29.5%;
     left: 0;
   }
+  /* line 257, ../scss/style.scss */
+  #profiles .baxter a:hover {
+    background: url(../img/baxter-logo-hover.png) no-repeat;
+    background-size: contain;
+  }
 }
-/* line 245, ../scss/style.scss */
+/* line 264, ../scss/style.scss */
 #profiles .village a {
   letter-spacing: 3.5px;
 }
 @media screen and (min-width: 600px) {
-  /* line 245, ../scss/style.scss */
+  /* line 264, ../scss/style.scss */
   #profiles .village a {
     width: 25%;
     margin: 0 11% 0 14%;
@@ -252,20 +277,25 @@ Profiles
     top: 32%;
     right: 0%;
   }
+  /* line 279, ../scss/style.scss */
+  #profiles .village a:hover {
+    background: url(../img/village-logo-hover.png) no-repeat;
+    background-size: contain;
+  }
 }
 
 /* =================================================================
 Promotions
 ================================================================= */
-/* line 269, ../scss/style.scss */
+/* line 293, ../scss/style.scss */
 #promotions {
   font-family: 'Quicksand', sans-serif;
 }
-/* line 272, ../scss/style.scss */
+/* line 296, ../scss/style.scss */
 #promotions section {
   padding: 8em 2em;
 }
-/* line 276, ../scss/style.scss */
+/* line 300, ../scss/style.scss */
 #promotions .fine-print {
   margin-top: 3em;
   font-size: 1.4em;
@@ -276,13 +306,13 @@ Promotions
   margin: 0 auto;
 }
 @media screen and (min-width: 600px) {
-  /* line 276, ../scss/style.scss */
+  /* line 300, ../scss/style.scss */
   #promotions .fine-print {
     font-size: 1.5em;
     line-height: 1.25em;
   }
 }
-/* line 291, ../scss/style.scss */
+/* line 315, ../scss/style.scss */
 #promotions .gradient {
   background: #401157;
   background: -moz-linear-gradient(top, #401157 0%, #21062e 100%);
@@ -292,16 +322,16 @@ Promotions
   background: -ms-linear-gradient(top, #401157 0%, #21062e 100%);
   background: linear-gradient(to bottom, #401157 0%, #21062e 100%);
 }
-/* line 295, ../scss/style.scss */
+/* line 319, ../scss/style.scss */
 #promotions a {
   text-decoration: underline;
 }
-/* line 299, ../scss/style.scss */
+/* line 323, ../scss/style.scss */
 #promotions .secondary-button {
   position: relative;
   z-index: 100;
 }
-/* line 303, ../scss/style.scss */
+/* line 327, ../scss/style.scss */
 #promotions .secondary-button a {
   font-size: 25px;
   text-transform: uppercase;
@@ -319,28 +349,28 @@ Promotions
   text-align: center;
   text-decoration: none !important;
 }
-/* line 314, ../scss/style.scss */
+/* line 338, ../scss/style.scss */
 #promotions .secondary-button .btn-fx:after {
   background-color: #c0acd1;
 }
-/* line 319, ../scss/style.scss */
+/* line 343, ../scss/style.scss */
 #promotions .secondary-button .btn-fx:hover,
 #promotions .secondary-button .btn-fx:active {
   color: #21052e;
   background-color: #fff;
 }
-/* line 325, ../scss/style.scss */
+/* line 349, ../scss/style.scss */
 #promotions .links-back {
   width: 140px;
   margin: 2em auto;
 }
 @media screen and (min-width: 400px) {
-  /* line 325, ../scss/style.scss */
+  /* line 349, ../scss/style.scss */
   #promotions .links-back {
     width: 325px;
   }
 }
-/* line 334, ../scss/style.scss */
+/* line 358, ../scss/style.scss */
 #promotions .baxter-back {
   text-indent: -99999px;
   display: inline-block;
@@ -352,13 +382,13 @@ Promotions
   vertical-align: middle;
 }
 @media screen and (min-width: 400px) {
-  /* line 334, ../scss/style.scss */
+  /* line 358, ../scss/style.scss */
   #promotions .baxter-back {
     margin-right: 2em;
     margin-bottom: 0;
   }
 }
-/* line 350, ../scss/style.scss */
+/* line 374, ../scss/style.scss */
 #promotions .village-back {
   text-indent: -99999px;
   display: inline-block;
@@ -370,13 +400,13 @@ Promotions
   vertical-align: middle;
 }
 @media screen and (min-width: 400px) {
-  /* line 350, ../scss/style.scss */
+  /* line 374, ../scss/style.scss */
   #promotions .village-back {
     margin-left: 2em;
     margin-bottom: 0;
   }
 }
-/* line 366, ../scss/style.scss */
+/* line 390, ../scss/style.scss */
 #promotions li {
   text-align: center;
   font-size: 1.4em;
