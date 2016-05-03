@@ -867,6 +867,14 @@ Map
 		text-decoration: underline; 
 		color: $light-gradient;
 	}
+
+	iframe { 
+		height: 250px;
+
+			@include breakpoint(600px) {
+				height: 450px;
+			}
+	}
 }
 
 /* =================================================================
