@@ -6,11 +6,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-	<title>Welcome to Village 8 Theatres</title>
-	<link rel='shortcut icon' href='img/baxter-favicon.ico' type='image/x-icon'/ >
+	<title>Village 8 Theatres</title>
+	<link rel='shortcut icon' href='img/village8-favicon.ico' type='image/x-icon'/ >
 	
-	<link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/device-breakpoints.css">
 	
@@ -71,6 +69,19 @@
 		<h2>
 			<a class="btn btn-fx" href="https://56.formovietickets.com:2235/">Buy Tickets</a>
 		</h2>
+
+		<div class="prices">
+			<p><span class="title">All-Day Tuesday Special</span> <span class="date">$2.00 (excluding Louisville Exclusives)</span></p>
+			<p><span class="title">All-Day Thursday Special</span> <span class="date">$3.00 (excluding Louisville Exclusives)</span></p>
+			<br>
+			<p><span class="title">Matinee (shows before 6pm)</span> <span class="date">$3.00</span></p>
+			<p><span class="title">Evening</span> <span class="date">$4.00</span></p>
+			<p><span class="title">Seniors (ages 65+)</span> <span class="date">$3.00</span></p>
+			<p><span class="title">Children (ages -11)</span> <span class="date">$3.00</span></p>
+			<p><span class="title">Students &amp; Military</span> <span class="date">$3.00</span></p>
+			<br>
+			<p><span class="title">Louisville Exclusive Films</span> <span class="date">$5.00</span></p>
+		</div>
 	</div>
 
 	<section id="now-showing">
@@ -258,47 +269,17 @@
 
 </div>
 
+
 <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 
-<script> // Open and Close mobile menu
-	$(document).ready(function () {
-		$( ".menu" ).click(function() {
-			$( ".navsect" ).toggleClass( "hide1" );
-			$( this ).toggleClass( "close" );
-			$('.navsect a').on('click', function(){
-			    $('.menu').trigger('click');
-			});
-		});
-	});
-</script>
+<script type="text/javascript" src="../js/menu.js"></script>
 
-<script>
-	$(document).ready(function() {
-		var pageWidth = $(window).width();
-	if (pageWidth > 1099) {
-	  $('a[href^="#"]').click(function() {
-	      var target = $(this.hash);
-	      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
-	      if (target.length == 0) target = $('html');
-	      $('html, body').animate({ scrollTop: target.offset().top-69 }, 500);
-	      return false;
-	  });
-	};
-});
-</script>
+<script type="text/javascript" src="../js/smoothscroll.js"></script>
 
-<script>
-	$('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
-</script>
+<script type="text/javascript" src="../js/enquire.min.js"></script>
+<script type="text/javascript" src="../js/skrollr.min.js"></script>
 
-<script type="text/javascript" src="js/enquire.min.js"></script>
-<script type="text/javascript" src="js/skrollr.min.js"></script>
-<script src="js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 
 </body>
 

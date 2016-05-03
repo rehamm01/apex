@@ -20,6 +20,52 @@ $light-button: #c0acd1;
 $dark-button: #21052e;
 
 /* =================================================================
+fonts
+================================================================= */
+
+/* bevan-regular - latin */
+@font-face {
+  font-family: 'Bevan';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/bevan-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Bevan'),
+       url('../../fonts/bevan-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/bevan-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/bevan-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/bevan-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/bevan-v7-latin-regular.svg#Bevan') format('svg'); /* Legacy iOS */
+}
+
+/* quicksand-regular - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/quicksand-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Quicksand Regular'), local('Quicksand-Regular'),
+       url('../../fonts/quicksand-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/quicksand-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/quicksand-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/quicksand-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/quicksand-v5-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+/* quicksand-700 - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/quicksand-v5-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Quicksand Bold'), local('Quicksand-Bold'),
+       url('../../fonts/quicksand-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/quicksand-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../../fonts/quicksand-v5-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/quicksand-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/quicksand-v5-latin-700.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+
+
+/* =================================================================
 mixins
 ================================================================= */
 @mixin clearfix {
@@ -617,6 +663,46 @@ Buttons
 .google {
 	@include breakpoint($end-small) {
 		float: right;
+	}
+}
+
+/* =================================================================
+Tickets
+================================================================= */
+
+.prices {
+	@include clearfix;
+	margin: 4em 0;
+	color: #21052e; 
+
+	p {
+	    width: 100%;
+	    max-width: 600px;
+	    margin: 1.5em auto 0;
+	    padding-bottom: 0;
+	    clear: both;
+	    font-size: 1.5em;
+	    line-height: 20px;
+
+	    	@include breakpoint(500px) {
+	    		line-height: 22px;
+	    	}
+	}
+
+	.title {
+		display: block;
+
+			@include breakpoint(500px) {
+				float: left;
+			}
+	}
+
+	.date {
+		display: block;
+
+			@include breakpoint(500px) {
+				float: right;
+			}
 	}
 }
 

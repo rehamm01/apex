@@ -7,12 +7,48 @@
 variables
 ================================================================= */
 /* =================================================================
+fonts
+================================================================= */
+/* josefin-sans-300 - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/josefin-sans-v9-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Josefin Sans Light"), local("JosefinSans-Light"), url("../fonts/josefin-sans-v9-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/josefin-sans-v9-latin-300.woff2") format("woff2"), url("../fonts/josefin-sans-v9-latin-300.woff") format("woff"), url("../fonts/josefin-sans-v9-latin-300.ttf") format("truetype"), url("../fonts/josefin-sans-v9-latin-300.svg#JosefinSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* josefin-sans-regular - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/josefin-sans-v9-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Josefin Sans"), local("JosefinSans"), url("../fonts/josefin-sans-v9-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/josefin-sans-v9-latin-regular.woff2") format("woff2"), url("../fonts/josefin-sans-v9-latin-regular.woff") format("woff"), url("../fonts/josefin-sans-v9-latin-regular.ttf") format("truetype"), url("../fonts/josefin-sans-v9-latin-regular.svg#JosefinSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* josefin-sans-700 - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/josefin-sans-v9-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Josefin Sans Bold"), local("JosefinSans-Bold"), url("../fonts/josefin-sans-v9-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/josefin-sans-v9-latin-700.woff2") format("woff2"), url("../fonts/josefin-sans-v9-latin-700.woff") format("woff"), url("../fonts/josefin-sans-v9-latin-700.ttf") format("truetype"), url("../fonts/josefin-sans-v9-latin-700.svg#JosefinSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* =================================================================
 mixins
 ================================================================= */
 /* =================================================================
 reset
 ================================================================= */
-/* line 69, ../scss/style.scss */
+/* line 113, ../scss/style.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -35,36 +71,36 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 80, ../scss/style.scss */
+/* line 124, ../scss/style.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 84, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 88, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 93, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 98, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 103, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -74,14 +110,14 @@ table {
 /* =================================================================
 basic
 ================================================================= */
-/* line 114, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* line 120, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 body {
   background-color: #000;
   color: #fff;
@@ -89,7 +125,7 @@ body {
   font-size: 62.5%;
 }
 
-/* line 127, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 h1 {
   text-indent: 100%;
   white-space: nowrap;
@@ -97,14 +133,14 @@ h1 {
   font-size: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 127, ../scss/style.scss */
+  /* line 171, ../scss/style.scss */
   h1 {
     display: table-cell;
     vertical-align: middle;
   }
 }
 
-/* line 139, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 h3 {
   font-size: 2em;
   text-align: center;
@@ -116,25 +152,25 @@ h3 {
   margin: 0 5%;
 }
 @media screen and (min-width: 600px) {
-  /* line 139, ../scss/style.scss */
+  /* line 183, ../scss/style.scss */
   h3 {
     padding-top: 2em;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 139, ../scss/style.scss */
+  /* line 183, ../scss/style.scss */
   h3 {
     padding-top: 1em;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 139, ../scss/style.scss */
+  /* line 183, ../scss/style.scss */
   h3 {
     padding-top: 0;
   }
 }
 
-/* line 162, ../scss/style.scss */
+/* line 206, ../scss/style.scss */
 p {
   text-align: center;
   padding-bottom: 1em;
@@ -142,19 +178,19 @@ p {
   line-height: 2em;
 }
 
-/* line 169, ../scss/style.scss */
+/* line 213, ../scss/style.scss */
 a {
   color: #fff;
   text-decoration: none;
 }
 
-/* line 174, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .wrapper {
   max-width: 900px;
   margin: 0 auto;
   width: 100%;
 }
-/* line 25, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 .wrapper:after {
   content: "";
   clear: both;
@@ -162,13 +198,13 @@ a {
   width: 100%;
 }
 
-/* line 181, ../scss/style.scss */
+/* line 225, ../scss/style.scss */
 .wrapper2 {
   max-width: 1350px;
   margin: 0 auto;
   width: 100%;
 }
-/* line 25, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 .wrapper2:after {
   content: "";
   clear: both;
@@ -179,7 +215,7 @@ a {
 /* =================================================================
 Profiles
 ================================================================= */
-/* line 193, ../scss/style.scss */
+/* line 237, ../scss/style.scss */
 #profiles {
   background-image: url("../img/background.jpg");
   padding: 5vh 0;
@@ -189,23 +225,23 @@ Profiles
   height: 100vh;
 }
 @media screen and (min-width: 600px) {
-  /* line 193, ../scss/style.scss */
+  /* line 237, ../scss/style.scss */
   #profiles {
     height: 100vh;
   }
 }
-/* line 205, ../scss/style.scss */
+/* line 249, ../scss/style.scss */
 #profiles:before {
   display: block;
   content: '';
   margin: 0 auto;
   background: url("../img/apex-logo.png") no-repeat;
   background-size: contain;
-  width: 75px;
-  height: 251px;
+  width: 67px;
+  height: 221px;
 }
 @media screen and (min-width: 600px) {
-  /* line 205, ../scss/style.scss */
+  /* line 249, ../scss/style.scss */
   #profiles:before {
     background-size: cover;
     padding-top: 47%;
@@ -214,7 +250,7 @@ Profiles
   }
 }
 @media screen and (min-width: 1050px) {
-  /* line 205, ../scss/style.scss */
+  /* line 249, ../scss/style.scss */
   #profiles:before {
     width: 147px;
     height: 493.5px;
@@ -222,7 +258,7 @@ Profiles
     padding-top: 0;
   }
 }
-/* line 229, ../scss/style.scss */
+/* line 273, ../scss/style.scss */
 #profiles a {
   text-transform: uppercase;
   font-size: 2em;
@@ -233,14 +269,14 @@ Profiles
   text-align: center;
 }
 @media screen and (min-width: 600px) {
-  /* line 229, ../scss/style.scss */
+  /* line 273, ../scss/style.scss */
   #profiles a {
     border: 0;
     text-indent: -99999px;
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 244, ../scss/style.scss */
+  /* line 288, ../scss/style.scss */
   #profiles .baxter a {
     width: 25%;
     margin: 0 14% 0 11%;
@@ -253,18 +289,18 @@ Profiles
     top: 29.5%;
     left: 0;
   }
-  /* line 257, ../scss/style.scss */
+  /* line 301, ../scss/style.scss */
   #profiles .baxter a:hover {
     background: url(../img/baxter-logo-hover.png) no-repeat;
     background-size: contain;
   }
 }
-/* line 264, ../scss/style.scss */
+/* line 308, ../scss/style.scss */
 #profiles .village a {
   letter-spacing: 3.5px;
 }
 @media screen and (min-width: 600px) {
-  /* line 264, ../scss/style.scss */
+  /* line 308, ../scss/style.scss */
   #profiles .village a {
     width: 25%;
     margin: 0 11% 0 14%;
@@ -277,7 +313,7 @@ Profiles
     top: 32%;
     right: 0%;
   }
-  /* line 279, ../scss/style.scss */
+  /* line 323, ../scss/style.scss */
   #profiles .village a:hover {
     background: url(../img/village-logo-hover.png) no-repeat;
     background-size: contain;
@@ -287,15 +323,15 @@ Profiles
 /* =================================================================
 Promotions
 ================================================================= */
-/* line 293, ../scss/style.scss */
+/* line 337, ../scss/style.scss */
 #promotions {
   font-family: 'Quicksand', sans-serif;
 }
-/* line 296, ../scss/style.scss */
+/* line 340, ../scss/style.scss */
 #promotions section {
   padding: 8em 2em;
 }
-/* line 300, ../scss/style.scss */
+/* line 344, ../scss/style.scss */
 #promotions .fine-print {
   margin-top: 3em;
   font-size: 1.4em;
@@ -306,13 +342,13 @@ Promotions
   margin: 0 auto;
 }
 @media screen and (min-width: 600px) {
-  /* line 300, ../scss/style.scss */
+  /* line 344, ../scss/style.scss */
   #promotions .fine-print {
     font-size: 1.5em;
     line-height: 1.25em;
   }
 }
-/* line 315, ../scss/style.scss */
+/* line 359, ../scss/style.scss */
 #promotions .gradient {
   background: #401157;
   background: -moz-linear-gradient(top, #401157 0%, #21062e 100%);
@@ -322,16 +358,16 @@ Promotions
   background: -ms-linear-gradient(top, #401157 0%, #21062e 100%);
   background: linear-gradient(to bottom, #401157 0%, #21062e 100%);
 }
-/* line 319, ../scss/style.scss */
+/* line 363, ../scss/style.scss */
 #promotions a {
   text-decoration: underline;
 }
-/* line 323, ../scss/style.scss */
+/* line 367, ../scss/style.scss */
 #promotions .secondary-button {
   position: relative;
   z-index: 100;
 }
-/* line 327, ../scss/style.scss */
+/* line 371, ../scss/style.scss */
 #promotions .secondary-button a {
   font-size: 25px;
   text-transform: uppercase;
@@ -349,34 +385,34 @@ Promotions
   text-align: center;
   text-decoration: none !important;
 }
-/* line 338, ../scss/style.scss */
+/* line 382, ../scss/style.scss */
 #promotions .secondary-button .btn-fx:after {
   background-color: #c0acd1;
 }
-/* line 343, ../scss/style.scss */
+/* line 387, ../scss/style.scss */
 #promotions .secondary-button .btn-fx:hover,
 #promotions .secondary-button .btn-fx:active {
   color: #21052e;
   background-color: #fff;
 }
-/* line 349, ../scss/style.scss */
+/* line 393, ../scss/style.scss */
 #promotions .links-back {
   width: 140px;
   margin: 2em auto;
 }
 @media screen and (min-width: 400px) {
-  /* line 349, ../scss/style.scss */
+  /* line 393, ../scss/style.scss */
   #promotions .links-back {
     width: 325px;
   }
 }
 @media screen and (min-width: 400px) {
-  /* line 358, ../scss/style.scss */
+  /* line 402, ../scss/style.scss */
   #promotions #screeningroom .links-back {
     width: 140px;
   }
 }
-/* line 364, ../scss/style.scss */
+/* line 408, ../scss/style.scss */
 #promotions .baxter-back {
   text-indent: -99999px;
   display: inline-block;
@@ -388,13 +424,13 @@ Promotions
   vertical-align: middle;
 }
 @media screen and (min-width: 400px) {
-  /* line 364, ../scss/style.scss */
+  /* line 408, ../scss/style.scss */
   #promotions .baxter-back {
     margin-right: 2em;
     margin-bottom: 0;
   }
 }
-/* line 380, ../scss/style.scss */
+/* line 424, ../scss/style.scss */
 #promotions .village-back {
   text-indent: -99999px;
   display: inline-block;
@@ -406,13 +442,13 @@ Promotions
   vertical-align: middle;
 }
 @media screen and (min-width: 400px) {
-  /* line 380, ../scss/style.scss */
+  /* line 424, ../scss/style.scss */
   #promotions .village-back {
     margin-left: 2em;
     margin-bottom: 0;
   }
 }
-/* line 396, ../scss/style.scss */
+/* line 440, ../scss/style.scss */
 #promotions li {
   text-align: center;
   font-size: 1.4em;
